@@ -21,6 +21,7 @@
 <!-- Index-Page-CSS --> <link rel="stylesheet" href="css/style.css" type="text/css">
 <!-- Bootstrap-CSS --> <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <!-- Font Awesome-CSS --> <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<!-- Animated Bars-CSS --> <link rel="stylesheet" href="css/bars.css" type="text/css">
 <!-- //Custom-Stylesheet-Links -->
 
 <!-- Fonts -->
@@ -109,9 +110,7 @@
         <div class="container">
             <div class="col-md-8">
 
-                <div>
-                    <h3>MY STORY</h3>
-                </div>
+                <div><h3> MY STORY </h3></div>
 
                 <!--Photo-->
                 <img src="images/photo.png" alt="" class="photo">
@@ -124,9 +123,8 @@
             </div>
 
             <div class="col-md-4">
-                <div>
-                    <h3>CONTACT</h3>
-                </div>
+
+                <div><h3> CONTACT </h3></div>
 
                 <ul>
                     <li><div class="li1">Birthday</div><div class="li2">:</div><div class="li3">10/10/1990</div></li>
@@ -148,21 +146,28 @@
 
         <h2> My skills </h2>
 
-
         <div class="container">
 
             <div class="col-md-6">
                 <div><h3>PROFESSIONAL SKILLS</h3></div>
 
                 <!-- Tabs -->
+                    Lorem ipsum bla bla bla
                 <!-- //Tabs -->
             </div>
 
             <div class="col-md-6">
                 <div><h3>TECHNICAL SKILLS</h3></div>
 
-                <!-- Tabs -->
-                <!-- //Tabs -->
+                <!-- Bars -->
+                <div class="bar_group">
+                    <div class='bar_group__bar thin' label='Lorem' show_values='true' tooltip='true' value='75'></div>
+                    <div class='bar_group__bar thin' label='Ipsum' show_values='true' tooltip='true' value='82'></div>
+                    <div class='bar_group__bar thin' label='Dolor' show_values='true' tooltip='true' value='95'></div>
+                    <div class='bar_group__bar thin' label='Sit' show_values='true' tooltip='true' value='86'></div>
+                    <div class='bar_group__bar thin' label='Amet' show_values='true' tooltip='true' value='76'></div>
+                </div>
+                <!-- //Bars -->
             </div>
 
         </div>
@@ -173,6 +178,51 @@
 
 
     <!-- Resume -->
+    <div id="resume">
+
+        <h2> Resume </h2>
+
+        <div class="container">
+
+            <div><h3> Experience </h3></div>
+
+            <div class="container-fluid info">
+                <div class="col-xs-6 left"> 
+                    <h4>2013 - 2016</h4>
+                </div>
+
+                <div class="col-xs-6 right"> 
+                    <h5>Company 4</h5>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo<br><br> </p>
+                </div>
+            </div>
+
+            <div class="container-fluid info">
+                <div class="col-xs-6 left2"> 
+                    <h5>Company 4</h5>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo </p>
+                </div>
+
+                <div class="col-xs-6 right2"> 
+                    <h4>2013 - 2016</h4>
+                    <p style="color: transparent;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo<br><br> </p>
+                </div>
+            </div>
+
+            <div class="container-fluid info">
+                <div class="col-xs-6 left"> 
+                    <h4>2013 - 2016</h4>
+                </div>
+
+                <div class="col-xs-6 right"> 
+                    <h5>Company 4</h5>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
     <!-- //Resume -->
 
 
@@ -221,6 +271,10 @@
             });
         </script>
     <!-- //typed.js -->
+
+    <!-- Progressive-Bars-JavaScript -->
+        <script src="js/bars.js"></script>
+    <!-- //Progressive-Bars-JavaScript -->
 
 <!-- //Custom-JavaScript-File-Links -->
 
