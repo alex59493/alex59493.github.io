@@ -184,8 +184,75 @@
 	margin-bottom: 50px;
 }
 
+#presentation h3 {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 700;
+	text-align: left;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #000;
+	margin-bottom: 25px;
+}
+
+#presentation p {
+	padding-right: 15px;
+	line-height: 30px;
+	font-size: 15px;
+}
+
 #presentation .photo {
+	float: right;
+	width: 300px;
+	margin-left: 30px;
+	margin-right: 15px;
+	margin-bottom: 30px;
+}
+
+#presentation ul li {
+	display: block;
+	padding: 15px 0;
+}
+
+#presentation ul li .li1 {
+	font-family: 'Montserrat', sans-serif;
+	width: 15%;
+	float: left;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+#presentation ul li .li2 {
+	width: 10%;
+	float: left;
 	text-align: center;
+}
+
+#presentation ul li .li3 {
+	width: 75%;
+	float: left;
+	font-size: 15px;
+	padding-top: 1px;
+}
+
+#presentation ul li:nth-child(1) {
+	padding-top: 0;
+}
+
+#presentation ul li:nth-child(5) {
+	padding-bottom: 0;
+}
+
+#presentation ul li:nth-child(5) .li3 {
+	padding-right: 100px;
+	line-height: 25px;
+}
+
+#presentation ul li a {
+	color: #333;
+}
+
+#presentation ul li a:hover {
+	color: #607D8B;
 }
 
 /*-- //Presentation Section --*/
@@ -202,6 +269,16 @@
 	font-size: 50px;
 	font-weight: 700;
 	margin-bottom: 50px;
+}
+
+#skills h3 {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 700;
+	text-align: left;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #000;
+	margin-bottom: 25px;
 }
 
 /*-- //Presentation Section --*/
