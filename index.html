@@ -56,9 +56,9 @@
                             <div class="nav-item-front">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </div>
-                            <!--<div class="nav-item-back">
-                                <h3><a href="#">PRESENTATION</a></h3>
-                            </div>-->
+                            <div class="nav-item-back">
+                                <h3><a class="scroll" href="#presentation">ABOUT</a></h3>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-2 col-xs-4">
@@ -66,6 +66,9 @@
                             <!--Skills-->
                             <div class="nav-item-front">
                                 <i class="fa fa-signal" aria-hidden="true"></i>
+                            </div>
+                            <div class="nav-item-back">
+                                <h3><a class="scroll" href="#skills">SKILLS</a></h3>
                             </div>
                         </div>
                     </div>
@@ -75,6 +78,9 @@
                             <div class="nav-item-front">
                                 <i class="fa fa-file" aria-hidden="true"></i>
                             </div>
+                            <div class="nav-item-back">
+                                <h3><a class="scroll" href="#resume">RESUME</a></h3>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-2 col-xs-4 col-sm-offset-0 col-xs-offset-2">
@@ -83,12 +89,19 @@
                             <div class="nav-item-front">
                                 <i class="fa fa-suitcase" aria-hidden="true"></i>
                             </div>
+                            <div class="nav-item-back">
+                                <h3><a class="scroll" href="#work">WORK</a></h3>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-2 col-xs-4">
                         <div class="nav-item">
+                            <!--Contact-->
                             <div class="nav-item-front">
                                 <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div class="nav-item-back">
+                                <h3><a class="scroll" href="#contact">CONTACT</a></h3>
                             </div>
                         </div>
                     </div>
@@ -287,7 +300,7 @@
     <!-- Bootstrap --> <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
     <!-- typed.js - Animated text -->
-        <script type="text/javascript" src="js/typed.min.js"></script>
+        <script src="js/typed.min.js"></script>
         <script>
             $(function(){
                 $("#header h2 span").typed({
@@ -342,6 +355,18 @@
             });
         </script>
     <!-- //Waypoints (trigger event on scroll) -->
+
+    <!-- Smooth-Scrolling-JavaScript -->
+        <script src="js/easing.js"></script>
+        <script>
+            $(function($) {
+                $(".scroll").click(function(event){
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                });
+            });
+        </script>
+    <!-- //Smooth-Scrolling-JavaScript -->
 
 <!-- //Custom-JavaScript-File-Links -->
 

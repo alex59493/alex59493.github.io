@@ -132,6 +132,7 @@
 	}
 
 	#header .navigation .nav-item {
+		position: relative;
 		display: inline-block;
 		width: 100px;
 		height: 100px;
@@ -152,7 +153,24 @@
 	}
 
 	#header .navigation .nav-item .nav-item-back {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
 		opacity: 0;
+		background: rgba(0, 0, 0, 0.5);
+		pointer-events: none;
+		-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		transform: scale(1.5);
+		-webkit-transition: all 0.4s ease-in-out 0.2s;
+		-moz-transition: all 0.4s ease-in-out 0.2s;
+		-o-transition: all 0.4s ease-in-out 0.2s;
+		-ms-transition: all 0.4s ease-in-out 0.2s;
+		transition: all 0.4s ease-in-out 0.2s;
 	}
 
 	#header .navigation .nav-item:hover .nav-item-front {
@@ -172,6 +190,17 @@
 		transform: scale(1);
 		opacity: 1;
 		pointer-events: auto;
+	}
+
+	#header .navigation .nav-item-back h3 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		margin-top: 35px;
+	}
+
+	#header .navigation .nav-item-back h3 a {
+		color: #607D8B;
 	}
 
 	/*-- //Navigation --*/
@@ -495,34 +524,34 @@
 		font-size: 15px;
 		line-height: 25px;
 	}
-	
+
 /*-- //Footer Section --*/
 
 
 
 /*-- Typed Cursor header --*/
 
-.typed-cursor{
-	color: black;
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
+	.typed-cursor{
+		color: black;
+		opacity: 1;
+		-webkit-animation: blink 0.7s infinite;
+		-moz-animation: blink 0.7s infinite;
+		animation: blink 0.7s infinite;
+	}
+	@keyframes blink{
+		0% { opacity:1; }
+		50% { opacity:0; }
+		100% { opacity:1; }
+	}
+	@-webkit-keyframes blink{
+		0% { opacity:1; }
+		50% { opacity:0; }
+		100% { opacity:1; }
+	}
+	@-moz-keyframes blink{
+		0% { opacity:1; }
+		50% { opacity:0; }
+		100% { opacity:1; }
+	}
 
 /*-- //Typed Cursor header --*/
