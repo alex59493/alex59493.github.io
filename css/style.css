@@ -427,6 +427,10 @@
 		margin-bottom: 50px;
 	}
 
+	#work .thumbnail {
+		height: 300px;
+	}
+
 /*-- //Work Section --*/
 
 
@@ -450,6 +454,7 @@
 		font-size: 50px;
 		font-weight: 700;
 		margin-bottom: 50px;
+		color: white;
 	}
 
 	#contact .contact_form input[type='text'], .contact_form input[type="email"] {
@@ -530,6 +535,27 @@
 	}
 
 /*-- //Footer Section --*/
+
+
+
+/*-- Go-To-Top-Button --*/
+
+	#toTop {
+		z-index: 99999;
+		display: none;
+		text-decoration: none;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		overflow: hidden;
+		width: 40px;
+		height: 40px;
+		border: none;
+		text-indent: 100%;
+		background: url("../images/to-top.png") no-repeat 0px 0px;
+	}
+
+/*-- //Go-To-Top-Button --*/
 
 
 

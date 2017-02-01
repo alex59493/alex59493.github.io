@@ -293,6 +293,25 @@
         <h2> My work </h2>
 
         <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="thumbnail">
+                        Aero
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2">
+                    <div class="thumbnail">
+                        CCookie
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        TravelMi
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -337,6 +356,12 @@
         <p>Alexandre PECCAUD. All Rights Reserved</p>
     </div>
 	<!-- //Footer -->
+
+
+    
+    <!-- Arrow to top smooth scroll -->
+    <a href="#" id="toTop" class="" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
+    <!-- //Arrow to top smooth scroll -->
 
 
 
@@ -413,6 +438,21 @@
             });
         </script>
     <!-- //Smooth-Scrolling-JavaScript -->
+
+    <!-- Slide-To-Top JavaScript -->
+        <script src="js/move-top.js"></script>
+        <script>
+            $(function() {
+                var defaults = {
+                    containerID: 'toTop',
+                    containerHoverID: 'toTopHover',
+                    scrollSpeed: 100,
+                    easingType: 'linear',
+                };
+                $().UItoTop({ easingType: 'easeOutQuart' });
+            });
+        </script>
+    <!-- //Slide-To-Top JavaScript -->
 
 <!-- //Custom-JavaScript-File-Links -->
 
