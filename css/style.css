@@ -322,6 +322,29 @@
 		padding-top: 20px;
 	}
 
+	#skills .container .item {
+		margin: 10px 0px;
+		padding: 20px;
+	}
+
+	#skills .container .item .icon {
+		display: inline-block;
+		box-sizing: border-box;
+		width: 30%;
+		text-align: center;
+	}
+
+	#skills .container .item .icon .fa {
+		font-size: 50px;
+	}
+
+	#skills .container .item .content {
+		vertical-align: top;
+		display: inline-block;
+		box-sizing: border-box;
+		width: 70%;
+	}
+
 /*-- //Skills Section --*/
 
 
@@ -340,6 +363,34 @@
 
 	#work .thumbnail {
 		height: 300px;
+		overflow: hidden;
+		padding: 0;
+		background-color: white;
+	}
+
+	#work .thumbnail:hover {
+		opacity: 0.6;
+	}
+
+	#work .aero {
+		background-image: url("../images/aero/main-page.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	#work .sephoradata {
+		background-image: url("../images/sephora-data.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	#work .ccookie {
+		background-image: url("../images/ccookie.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 	}
 
 /*-- //Work Section --*/
