@@ -50,7 +50,7 @@
 
             <div class="container" style="width: 100%;">
                 <div class="row">
-                    <div class="col-sm-2 col-sm-offset-1 col-xs-4">
+                    <div class="col-sm-2 col-sm-offset-2 col-xs-4">
                         <div class="nav-item">
                             <!--Presentation-->
                             <div class="nav-item-front">
@@ -69,17 +69,6 @@
                             </div>
                             <div class="nav-item-back">
                                 <h3><a class="scroll" href="#skills">SKILLS</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-xs-4">
-                        <div class="nav-item">
-                            <!--Resume-->
-                            <div class="nav-item-front">
-                                <i class="fa fa-file" aria-hidden="true"></i>
-                            </div>
-                            <div class="nav-item-back">
-                                <h3><a class="scroll" href="#resume">RESUME</a></h3>
                             </div>
                         </div>
                     </div>
@@ -190,100 +179,6 @@
 
     </div>
     <!-- //Skills -->
-
-
-
-    <!-- Resume -->
-    <div id="resume">
-
-        <h2> Resume </h2>
-
-        <!-- Experience -->
-        <div class="container">
-
-            <div><h3> Experience </h3></div>
-
-            <div class="container-fluid info">
-                <div class="col-xs-6 left"> 
-                    <h4>2013 - 2016</h4>
-                </div>
-
-                <div class="col-xs-6 right"> 
-                    <h5>Company 4</h5>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo<br><br> </p>
-                </div>
-            </div>
-
-            <div class="container-fluid info">
-                <div class="col-xs-6 left2"> 
-                    <h5>Company 4</h5>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo </p>
-                </div>
-
-                <div class="col-xs-6 right2"> 
-                    <h4>2013 - 2016</h4>
-                    <p style="color: transparent;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo<br><br> </p>
-                </div>
-            </div>
-
-            <div class="container-fluid info">
-                <div class="col-xs-6 left"> 
-                    <h4>2013 - 2016</h4>
-                </div>
-
-                <div class="col-xs-6 right"> 
-                    <h5>Company 4</h5>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo </p>
-                </div>
-            </div>
-
-        </div>
-        <!-- //Experience -->
-
-        <!-- Education -->
-        <div class="container">
-
-            <div><h3> Education </h3></div>
-
-            <div class="container-fluid info">
-                <div class="col-xs-6 left"> 
-                    <h4>2013 - 2016</h4>
-                </div>
-
-                <div class="col-xs-6 right"> 
-                    <h5>Company 4</h5>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo<br><br> </p>
-                </div>
-            </div>
-
-            <div class="container-fluid info">
-                <div class="col-xs-6 left2"> 
-                    <h5>Company 4</h5>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo </p>
-                </div>
-
-                <div class="col-xs-6 right2"> 
-                    <h4>2013 - 2016</h4>
-                    <p style="color: transparent;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo<br><br> </p>
-                </div>
-            </div>
-
-            <div class="container-fluid info">
-                <div class="col-xs-6 left"> 
-                    <h4>2013 - 2016</h4>
-                </div>
-
-                <div class="col-xs-6 right"> 
-                    <h5>Company 4</h5>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo </p>
-                </div>
-            </div>
-
-        </div>
-        <!-- //Education -->
-
-    </div>
-    <!-- //Resume -->
 
 
 
@@ -398,34 +293,6 @@
     <!-- Progressive-Bars-JavaScript -->
         <script src="js/bars.js"></script>
     <!-- //Progressive-Bars-JavaScript -->
-
-    <!-- Waypoints (trigger event on scroll) -->
-        <script src="js/waypoints/lib/jquery.waypoints.min.js"></script>
-        <script>
-            $(function(){
-                $('#resume .left').css('opacity', 0);
-                $('#resume .left2').css('opacity', 0);
-                $('#resume .right').css('opacity', 0);
-                $('#resume .right2').css('opacity', 0);
-
-                $("#resume .left").waypoint(function() {
-                    $('#resume .left').addClass('animated fadeInLeft');
-                }, { offset: '100%'});
-
-                $("#resume .left2").waypoint(function() {
-                    $('#resume .left2').addClass('animated fadeInLeft');
-                }, { offset: '100%'});
-
-                $("#resume .right").waypoint(function() {
-                    $('#resume .right').addClass('animated fadeInRight');
-                }, { offset: '100%'});
-
-                $("#resume .right2").waypoint(function() {
-                    $('#resume .right2').addClass('animated fadeInRight');
-                }, { offset: '100%'});
-            });
-        </script>
-    <!-- //Waypoints (trigger event on scroll) -->
 
     <!-- Smooth-Scrolling-JavaScript -->
         <script src="js/easing.js"></script>
