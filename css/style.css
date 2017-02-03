@@ -11,6 +11,7 @@
 		margin: 0;
 		background: #FFF;
 		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
 	}
 
 	body a {
@@ -234,7 +235,6 @@
 	#presentation p {
 		padding-right: 15px;
 		line-height: 30px;
-		font-size: 15px;
 	}
 
 	#presentation .photo {
@@ -254,7 +254,6 @@
 		font-family: 'Montserrat', sans-serif;
 		width: 20%;
 		float: left;
-		font-size: 15px;
 		font-weight: 700;
 	}
 
@@ -267,7 +266,6 @@
 	#presentation ul li .li3 {
 		width: 70%;
 		float: left;
-		font-size: 15px;
 		padding-top: 1px;
 	}
 
@@ -299,7 +297,7 @@
 /*-- Skills Section --*/
 
 	#skills {
-		padding: 50px 0;
+		padding: 30px 0;
 	}
 
 	#skills h2 {
@@ -322,8 +320,13 @@
 		padding-top: 20px;
 	}
 
+	#skills .container p {
+		margin: 15px 0;
+		font-style: italic;
+	}
+
 	#skills .container .item {
-		margin: 10px 0px;
+		margin: 15px 0px;
 		padding: 20px;
 	}
 
@@ -334,15 +337,25 @@
 		text-align: center;
 	}
 
+	#skills .container .item .icon b {
+		font-weight: 500;
+	}
+
 	#skills .container .item .icon .fa {
 		font-size: 50px;
+		color: #B71C1C
 	}
 
 	#skills .container .item .content {
+		padding: 0 10px;
 		vertical-align: top;
 		display: inline-block;
 		box-sizing: border-box;
 		width: 70%;
+	}
+
+	#skills .container .item .icon .lab {
+		padding-top: 5px;
 	}
 
 /*-- //Skills Section --*/
@@ -419,8 +432,6 @@
 		filter: alpha(opacity=0);
 		-webkit-transition: all .2s ease-in-out;
 		transition: all .2s ease-in-out;
-		/*margin: 50px 0 0;
-		padding: 7px 14px;*/
 	}
 
 	#work .hovereffect:hover img {
@@ -454,6 +465,7 @@
 /*-- Contact Section --*/
 
 	#contact {
+		margin-top: 50px;
 		padding: 50px 0;
 		background-image: url("../images/contact.jpg");
 		background-repeat: no-repeat;
