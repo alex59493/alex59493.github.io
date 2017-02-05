@@ -41,6 +41,8 @@
     <!-- Header -->
     <div id="header">
         
+        <div class="overlay"></div>
+
         <h1> ALEXANDRE PECCAUD </h1>
 
         <h2> - <span><!-- HERE GOES THE ANIMATED TEXT (typed.js) --></span> - </h2>
@@ -124,6 +126,8 @@
                     Passionné par le développement Web depuis plus de quatre ans, j’ai créé mon auto-entreprise afin de mettre mes compétences et mes connaissances au service de vos projets. Je suis spécialisé dans le développement de sites internet et d’applications Web.
                     <br><br>
                     Ayant de solides notions en programmation back-end (coté serveur), front-end (coté client) et marketing, je vous propose des solutions complètes et entièrement personnalisées selon vos demandes.
+                    <!--<br><br>
+                    Sites vitrine, site e-commerce, ...-->
                 </p>
             </div>
 
@@ -154,7 +158,7 @@
 
         <!-- Back-End -->
         <div class="container">
-            <div><h3> Back-End </h3></div>
+            <div><h3> BACK-END </h3></div>
 
             <p> J’utilise différentes technologies Back-end pour maximiser les performances et la 
             sécurité de vos sites Internet. </p>
@@ -231,7 +235,7 @@
 
         <!-- Front-End -->
         <div class="container" style="margin-top: 40px;">
-            <div><h3> Front-End </h3></div>
+            <div><h3> FRONT-END </h3></div>
 
             <p> J’utilise les dernières technologies Front-end pour améliorer l'expérience utilisateur
             et épurer l'interface de vos sites Internet. </p>
@@ -368,6 +372,11 @@
 
                 </div>
             </div>
+
+            <!-- 
+                BOT PROTOTYPE
+            -->
+
         </div>
 
     </div>
@@ -382,7 +391,7 @@
 
         <div class="container">
 
-            <form action="#" method="post" class="contact_form slideanim">
+            <form id="contactForm" action="#" method="post" class="contact_form slideanim">
 
 				<div class="message">
 					<div class="col-md-6 col-sm-6 grid_6 c1">
@@ -477,6 +486,31 @@
             });
         </script>
     <!-- //Slide-To-Top JavaScript -->
+
+    <!-- Send Email -->
+    <script>
+
+    $('#contactForm').submit(function(e){
+        e.preventDefault();
+        var data = $('#contactForm').serializeArray();
+
+        $(location).attr('href', 'mailto:alexandre.peccaud@gmail.com?subject='
+                            + encodeURIComponent("[Site perso] Quelqu'un a essayé de me contacter")
+                            + "&body=" 
+                            + encodeURIComponent(data[3].value)
+        );
+    });
+
+
+    // $('#submitMail').click(function(){
+    //     $(location).attr('href', 'mailto:alexandre.peccaud@gmail.com?subject='
+    //                             + encodeURIComponent("This is my subject")
+    //                             + "&body=" 
+    //                             + encodeURIComponent("This is my body")
+    //     );
+    // });
+    </script>
+    <!-- //Send Email -->
 
 <!-- //Custom-JavaScript-File-Links -->
 
