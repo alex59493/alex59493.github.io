@@ -568,13 +568,17 @@
 /*-- Footer Section --*/
 
 	#footer {
-		margin: 50px 0;
+		margin: 25px 0;
 		text-align: center;
 	}
 
-	#footer p {
-		color: #333;
-		line-height: 25px;
+	#footer .icons {
+		color: #B71C1C;
+	}
+
+	#footer .icons a {
+		font-size: 3em;
+		color: #B71C1C;
 	}
 
 /*-- //Footer Section --*/
