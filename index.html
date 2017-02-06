@@ -166,7 +166,7 @@
             <div class="row">
                 <div class="col-md-6">
 
-                    <div class="item">
+                    <div class="item item1">
                         <div class="icon">
                             <div>
                                 <i class="fa fa-cube" aria-hidden="true"></i>
@@ -180,7 +180,7 @@
                         </div>
                     </div>
 
-                    <div class="item">
+                    <div class="item item2">
                         <div class="icon">
                             <div>
                                 <i class="fa fa-check-square-o" aria-hidden="true"></i>
@@ -198,7 +198,7 @@
 
                 <div class="col-md-6">
 
-                    <div class="item">
+                    <div class="item item3">
                         <div class="icon">
                             <div>
                                 <i class="fa fa-database" aria-hidden="true"></i>
@@ -212,7 +212,7 @@
                         </div>
                     </div>
                     
-                    <div class="item">
+                    <div class="item item4">
                         <div class="icon">
                             <div>
                                 <i class="fa fa-random" aria-hidden="true"></i>
@@ -243,7 +243,7 @@
             <div class="row">
                 <div class="col-md-6">
                 
-                    <div class="item">
+                    <div class="item item5">
                         <div class="icon">
                             <div>
                                 <i class="fa fa-desktop" aria-hidden="true"></i>
@@ -261,7 +261,7 @@
 
                 <div class="col-md-6">
 
-                    <div class="item">
+                    <div class="item item6">
                         <div class="icon">
                             <div>
                                 <i class="fa fa-user" aria-hidden="true"></i>
@@ -350,10 +350,10 @@
                 <div class="col-md-4">
                     
                     <div class="hovereffect">
-                        <img class="img-responsive" src="images/ccookie.jpg" alt="">
+                        <img class="img-responsive" src="images/bot/bot.jpg" alt="">
                         <div class="overlay">
-                            <h2>travelmi</h2>
-                            <span class="info">application de découverte du monde</span>
+                            <h2>bot de recommandation</h2>
+                            <span class="info">recommandation de cadeaux de noel</span>
                         </div>
                     </div>
 
@@ -372,11 +372,6 @@
 
                 </div>
             </div>
-
-            <!-- 
-                BOT PROTOTYPE
-            -->
-
         </div>
 
     </div>
@@ -486,6 +481,54 @@
             });
         </script>
     <!-- //Slide-To-Top JavaScript -->
+
+    <!-- Waypoints (trigger event on scroll) -->
+         <script src="js/waypoints/lib/jquery.waypoints.min.js"></script>
+         <script>
+             $(function(){
+                 // Skills Items
+                 $('#skills .item1').css('opacity', 0);
+                 $('#skills .item2').css('opacity', 0);
+                 $('#skills .item3').css('opacity', 0);
+                 $('#skills .item4').css('opacity', 0);
+                 $('#skills .item5').css('opacity', 0);
+                 $('#skills .item6').css('opacity', 0);
+ 
+                 $("#skills .item1").waypoint(function() {
+                     $('#skills .item1').addClass('animated fadeInLeft');
+                 }, { offset: '100%'});
+ 
+                 $("#skills .item2").waypoint(function() {
+                     $('#skills .item2').addClass('animated fadeInLeft');
+                 }, { offset: '100%'});
+ 
+                 $("#skills .item3").waypoint(function() {
+                     $('#skills .item3').addClass('animated fadeInRight');
+                 }, { offset: '100%'});
+ 
+                 $("#skills .item4").waypoint(function() {
+                     $('#skills .item4').addClass('animated fadeInRight');
+                 }, { offset: '100%'});
+
+                 $("#skills .item5").waypoint(function() {
+                     $('#skills .item5').addClass('animated fadeInLeft');
+                 }, { offset: '100%'});
+
+                 $("#skills .item6").waypoint(function() {
+                     $('#skills .item6').addClass('animated fadeInRight');
+                 }, { offset: '100%'});
+                 // //Skills Items
+
+                 // Work Items
+                 $('#work .hovereffect').css('opacity', 0);
+
+                 $("#work .hovereffect").waypoint(function() {
+                     $('#work .hovereffect').addClass('animated fadeIn');
+                 }, { offset: '100%'});
+                 // //Work Items
+             });
+         </script>
+     <!-- //Waypoints (trigger event on scroll) -->
 
     <!-- Send Email -->
     <script>
