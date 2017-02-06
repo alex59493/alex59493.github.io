@@ -12,6 +12,7 @@
 		background: #FFF;
 		font-family: 'Roboto', sans-serif;
 		font-size: 16px;
+		overflow-x: hidden;
 	}
 
 	body a {
@@ -107,7 +108,8 @@
 		width: 70%;
 		margin: 0 auto;
 		padding: 75px 0;
-		font-size: 50px;
+		/*font-size: 50px;*/
+		font-size: 4vw;
 		letter-spacing: 3px;
 		font-weight: 700;
 		color: #FFF;
@@ -123,7 +125,8 @@
 		width: 35%;
 		margin: 0 auto;
 		padding: 20px 0;
-		font-size: 25px;
+		/*font-size: 25px;*/
+		font-size: 2vw;
 		letter-spacing: 2px;
 		font-weight: 700;
 		color: #000;
@@ -229,6 +232,10 @@
 	#presentation {
 		padding: 50px 0;
 		padding-top: 100px;
+	}
+
+	#presentation .container > div {
+		padding-top: 30px;
 	}
 
 	#presentation h2 {
@@ -347,9 +354,7 @@
 	}
 
 	#skills .container .item .icon {
-		display: inline-block;
 		box-sizing: border-box;
-		width: 30%;
 		text-align: center;
 	}
 
@@ -365,9 +370,8 @@
 	#skills .container .item .content {
 		padding: 0 10px;
 		vertical-align: top;
-		display: inline-block;
 		box-sizing: border-box;
-		width: 70%;
+		padding-top: 10px;
 	}
 
 	#skills .container .item .icon .lab {
@@ -472,6 +476,10 @@
 	#work .hovereffect:hover .info {
 		-webkit-transition-delay: .2s;
 		transition-delay: .2s;
+	}
+
+	#work .visible-xs-block {
+		color: #5e5e5e;
 	}
 
 /*-- //Work Section --*/
@@ -650,3 +658,22 @@
 	}
 
 /*-- //Typed Cursor header --*/
+
+
+
+@media screen and (max-width: 768px)
+{
+	#header h1 {
+		top: 5%;
+		width: 80%;
+	}
+
+	#header h2 {
+		top: 40%;
+		width: 70%;
+	}
+
+	#header .navigation {
+		top: 55%;
+	}
+}
