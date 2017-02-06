@@ -142,6 +142,10 @@
 		text-align: center;
 	}
 
+	#header .navigation .container {
+		width: 100%;
+	}
+
 	#header .navigation .nav-item {
 		position: relative;
 		display: inline-block;
