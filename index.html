@@ -125,7 +125,7 @@
                     <br><br>
                     Passionné par le développement Web depuis plus de quatre ans, j’ai créé mon auto-entreprise afin de mettre mes compétences et mes connaissances au service de vos projets. Je suis spécialisé dans le développement de sites internet et d’applications Web.
                     <br><br>
-                    Ayant de solides notions en programmation back-end (coté serveur), front-end (coté client) et marketing, je vous propose des solutions complètes et entièrement personnalisées selon vos demandes.
+                    Ayant de solides notions en programmation back-end (coté serveur), front-end (coté client) et marketing, je vous propose des solutions complètes et entièrement personnalisées selon vos demandes. Je vous aide à choisir le support digital le plus adapté à votre entreprise (site vitrine, e-commerce, blog, ...) et mets en place les bonnes pratiques pour améliorer votre visibilité sur le net et votre identité digitale.
                     <!--<br><br>
                     Sites vitrine, site e-commerce, ...-->
                 </p>
@@ -390,9 +390,9 @@
 
 				<div class="message">
 					<div class="col-md-6 col-sm-6 grid_6 c1">
-						<input type="text" class="margin-right" Name="Name" placeholder="Nom" required="">
-						<input type="email" Name="Email" placeholder="Email" required="">
-						<input type="text" class="margin-right" Name="Phone Number" placeholder="Numéro de téléphone" required="">
+						<input type="text" class="margin-right" Name="Name" placeholder="Nom" required>
+						<input type="email" Name="Email" placeholder="Reply to (email)">
+						<input type="text" class="margin-right" Name="Phone Number" placeholder="Numéro de téléphone">
 					</div>
 
 					<div class="col-md-6 col-sm-6 grid_6 c1">
@@ -438,6 +438,14 @@
         </div>
     </div>
 	<!-- //Footer -->
+
+
+
+    <!-- Banner -->
+    <div id="banner">
+        <!--BANNER MESSAGE-->
+    </div>
+    <!-- //Banner -->
 
 
     
@@ -554,26 +562,51 @@
 
     <!-- Send Email -->
     <script>
-
     $('#contactForm').submit(function(e){
         e.preventDefault();
         var data = $('#contactForm').serializeArray();
 
-        $(location).attr('href', 'mailto:alexandre.peccaud@gmail.com?subject='
-                            + encodeURIComponent("[Site perso] Quelqu'un a essayé de me contacter")
-                            + "&body=" 
-                            + encodeURIComponent(data[3].value)
-        );
+        var message = `
+            Name : ${data[0].value}
+            Reply to : ${data[1].value}
+            Tel : ${data[2].value}
+            Message : ${data[3].value}
+        `;
+
+        $.ajax({
+            url: "https://formspree.io/alexandre.peccaud@gmail.com", 
+            method: "POST",
+            data: {message: message},
+            dataType: "json",
+            success: function(resp, status) {
+                // Show banner
+                $("#banner").html("MESSAGE SUCCESSFULLY SENT");
+                $('#banner').fadeTo(500, 1, function() {
+                    $("#banner").css("display","block");
+                });
+                setTimeout(function() {
+                    $('#banner').fadeTo(500, 0, function() {
+                        $("#banner").css("display","none");
+                    });
+                }, 3000);
+
+                // Reset form
+                $('#contactForm').trigger("reset");
+            },
+            error: function() {
+                // Show banner
+                $("#banner").html("ERROR WHILE SENDING THE MESSAGE, PLEASE CONTACT DIRECTLY alexandre.peccaud@gmail.com");
+                $('#banner').fadeTo(500, 1, function() {
+                    $("#banner").css("display","block");
+                });
+                setTimeout(function() {
+                    $('#banner').fadeTo(500, 0, function() {
+                        $("#banner").css("display","none");
+                    });
+                }, 3000);
+            }
+        });
     });
-
-
-    // $('#submitMail').click(function(){
-    //     $(location).attr('href', 'mailto:alexandre.peccaud@gmail.com?subject='
-    //                             + encodeURIComponent("This is my subject")
-    //                             + "&body=" 
-    //                             + encodeURIComponent("This is my body")
-    //     );
-    // });
     </script>
     <!-- //Send Email -->
 

@@ -585,6 +585,24 @@
 
 
 
+/*-- Banner --*/
+	#banner {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		font-size: 20px;
+		padding: 15px 0;
+		text-align: center;
+		background-color: #D84315;
+		color: white;
+		font-weight: 500;
+	}
+/*-- //Banner --*/
+
+
+
 /*-- Go-To-Top-Button --*/
 
 	#toTop {
