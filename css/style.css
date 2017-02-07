@@ -44,7 +44,6 @@
 		margin: 0;
 		padding: 0;
 		text-align: center;
-		font-family: 'Montserrat', sans-serif;
 	}
 
 	p {
@@ -240,14 +239,14 @@
 
 	#presentation h2 {
 		font-size: 50px;
-		font-weight: 700;
+		font-weight: 500;
 		margin-bottom: 50px;
 	}
 
 	#presentation h3 {
 		display: inline-block;
 		font-size: 25px;
-		font-weight: 700;
+		font-weight: 500;
 		text-align: left;
 		padding-bottom: 10px;
 		border-bottom: 3px solid #000;
@@ -257,6 +256,7 @@
 	#presentation p {
 		padding-right: 15px;
 		line-height: 30px;
+		text-align: justify;
 	}
 
 	#presentation .photo {
@@ -325,14 +325,14 @@
 
 	#skills h2 {
 		font-size: 50px;
-		font-weight: 700;
+		font-weight: 500;
 		margin-bottom: 50px;
 	}
 
 	#skills h3 {
 		display: inline-block;
 		font-size: 25px;
-		font-weight: 700;
+		font-weight: 500;
 		text-align: left;
 		padding-bottom: 10px;
 		border-bottom: 3px solid #000;
@@ -349,7 +349,7 @@
 	}
 
 	#skills .container .item {
-		margin: 15px 0px;
+		margin: 20px 0px;
 		padding: 20px;
 	}
 
@@ -367,15 +367,16 @@
 		color: #B71C1C
 	}
 
+	#skills .container .item .icon .lab {
+		padding-top: 5px;
+	}
+
 	#skills .container .item .content {
 		padding: 0 10px;
 		vertical-align: top;
 		box-sizing: border-box;
 		padding-top: 10px;
-	}
-
-	#skills .container .item .icon .lab {
-		padding-top: 5px;
+		text-align: justify;
 	}
 
 /*-- //Skills Section --*/
@@ -390,7 +391,7 @@
 
 	#work h2 {
 		font-size: 50px;
-		font-weight: 700;
+		font-weight: 500;
 		margin-bottom: 50px;
 	}
 
@@ -504,7 +505,7 @@
 
 	#contact h2 {
 		font-size: 50px;
-		font-weight: 700;
+		font-weight: 500;
 		margin-bottom: 50px;
 		color: white;
 	}
