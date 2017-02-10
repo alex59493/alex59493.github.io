@@ -367,7 +367,10 @@
 		color: #B71C1C
 	}
 
-	#skills .container .item .icon .lab {
+	#skills .container .item .icon h4 {
+		color: #333;
+		font-size: 16px;
+		line-height: inherit;
 		padding-top: 5px;
 	}
 

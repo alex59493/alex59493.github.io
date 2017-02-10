@@ -14,21 +14,30 @@
 
     <!-- Meta-Tags -->
     <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="C'est la description de ma page !" />
-    <meta name="keywords" content="mots-clés" />
+    <meta name="description" content="Je vous propose des solutions complètes et entièrement personnalisées selon vos demandes. Je vous aide à choisir le support digital le plus adapté à votre entreprise (site vitrine, e-commerce, blog, ...) et mets en place les bonnes pratiques pour améliorer votre visibilité sur le net et votre identité digitale." />
+    <meta name="keywords" content="prestations, freelance, web developer, applications web, sites internet, services" />
+    <meta property="og:url" content="http://alexandre.peccaud.cc/" />
+    <meta property="og:title" content="Alexandre PECCAUD - Développeur de sites et applications web" />
+    <meta property="og:image" content="http://alexandre.peccaud.cc/images/header-background.jpg"/>
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="800"/>
+    <meta property="og:description" content="Je vous propose des solutions complètes et entièrement personnalisées selon vos demandes. Je vous aide à choisir le support digital le plus adapté à votre entreprise (site vitrine, e-commerce, blog, ...) et mets en place les bonnes pratiques pour améliorer votre visibilité sur le net et votre identité digitale." />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ALEXANDRE PECCAUD" />
     <!-- //Meta-Tags -->
 
-    <!-- Favicon -->
+    <link rel="canonical" href="http://alexandre.peccaud.cc/" />
     <link rel="icon" type="image/png" href="images/favicon-16.png" />
-    <!-- //Favicon -->
-
     <!-- Custom-Stylesheet-Links -->
-    <!-- Bootstrap-CSS --> <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <!-- Font-Awesome-CSS --> <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <!-- Animate-CSS --> <link rel="stylesheet" href="css/animate.css" type="text/css">
-    <!-- Main-CSS --> <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- //Custom-Stylesheet-Links -->
 
     <!-- Fonts -->
@@ -49,9 +58,16 @@
         
         <div class="overlay"></div>
 
-        <h1> ALEXANDRE PECCAUD </h1>
+        <h1>ALEXANDRE PECCAUD</h1>
 
+        <!-- Animated subtitle -->
+        <div id="typed-strings">
+            <p><strong>DEVELOPPEUR WEB</strong></p>
+            <p><strong>INGENIEUR</strong></p>
+            <p><strong>FREELANCER</strong></p>
+        </div>
         <h2> - <span><!-- HERE GOES THE ANIMATED TEXT (typed.js) --></span> - </h2>
+        <!-- //Animated subtitle -->
 
         <!-- Navigation -->
         <nav>
@@ -121,15 +137,14 @@
 
                 <div><h3> MON HISTOIRE </h3></div>
 
-                <!--Photo-->
-                <img src="images/photo.png" alt="" class="photo">
+                <!--Photo--><img src="images/photo.png" alt="photo" class="photo"><!--//Photo-->
 
                 <p>
                     Bonjour, je suis Alexandre.
                     <br><br>
-                    Passionné par le développement Web depuis plus de quatre ans, j’ai créé mon auto-entreprise afin de mettre mes compétences et mes connaissances au service de vos projets. Je suis spécialisé dans le développement de sites internet et d’applications Web.
+                    Passionné par le <strong>développement Web</strong> depuis plus de quatre ans, j’ai créé mon auto-entreprise afin de mettre mes compétences et mes connaissances au service de vos projets. Je suis spécialisé dans le <strong>développement de sites internet</strong> et d’<strong>applications Web</strong>.
                     <br><br>
-                    Ayant de solides notions en programmation back-end (coté serveur), front-end (coté client) et marketing, je vous propose des solutions complètes et entièrement personnalisées selon vos demandes. Je vous aide à choisir le support digital le plus adapté à votre entreprise (site vitrine, e-commerce, blog, ...) et mets en place les bonnes pratiques pour améliorer votre visibilité sur le net et votre identité digitale.
+                    Ayant de solides notions en programmation back-end (coté serveur), front-end (coté client) et marketing, je vous propose des <strong>solutions complètes et entièrement personnalisées</strong> selon vos demandes. Je vous aide à choisir le <strong>support digital</strong> le plus adapté à votre entreprise (site vitrine, e-commerce, blog, ...) et mets en place les bonnes pratiques pour améliorer votre <strong>visibilité sur le net</strong> et votre <strong>identité digitale</strong>.
                 </p>
             </div>
 
@@ -138,10 +153,21 @@
                 <div><h3> CONTACT </h3></div>
 
                 <ul>
-                    <li><div class="li1">Addresse</div><div class="li2">:</div><div class="li3">Lille, Nord</div></li>
-                    <li><div class="li1">Tel</div><div class="li2">:</div><div class="li3">+33 6 66 50 89 96</div></li>
-                    <li><div class="li1">Email</div><div class="li2">:</div><div class="li3"><a class="mail" href="mailto:alexandre.peccaud@gmail.com">alexandre.peccaud@gmail.com</a></div></li>
-                    <li><div class="li1">Linkedin</div><div class="li2">:</div><div class="li3"><a href="https://fr.linkedin.com/in/alexandre-peccaud-3a2253b8" target="blank">Alexandre PECCAUD</a></div></li>
+                    <li itemscope itemtype="http://schema.org/Person">
+                        <div class="li1">Nom</div><div class="li2">:</div><div class="li3" itemprop="name">Alexandre PECCAUD</div>
+                    </li>
+                    <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <div class="li1">Addresse</div><div class="li2">:</div><div class="li3"><span itemprop="addressLocality">Lille</span>, <span itemprop="addressRegion">Nord</span></div>
+                    </li>
+                    <li>
+                        <div class="li1">Tel</div><div class="li2">:</div><div class="li3"><a href="tel://+33666508996">+33 6 66 50 89 96</a></div>
+                    </li>
+                    <li>
+                        <div class="li1">Email</div><div class="li2">:</div><div class="li3"><a class="mail" href="mailto:alexandre.peccaud@gmail.com">alexandre.peccaud@gmail.com</a></div>
+                    </li>
+                    <li>
+                        <div class="li1">Linkedin</div><div class="li2">:</div><div class="li3"><a href="https://fr.linkedin.com/in/alexandre-peccaud-3a2253b8" target="blank" rel="nofollow">Alexandre PECCAUD</a></div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -155,7 +181,6 @@
     <section id="skills">
 
         <h2> Mes compétences </h2>
-
 
 
         <!-- Back-End -->
@@ -173,9 +198,7 @@
                             <div>
                                 <i class="fa fa-cube" aria-hidden="true"></i>
                             </div>
-                            <div class="lab">
-                                <b>Sécurité</b>
-                            </div>
+                            <h4>Sécurité</h4>
                         </div>
                         <div class="content">
                             J'utilise des langages de programmation solides et mets en place les
@@ -188,10 +211,9 @@
                             <div>
                                 <i class="fa fa-check-square-o" aria-hidden="true"></i>
                             </div>
-                            <div class="lab">
-                                <b>Fiabilité</b>
-                            </div>
-                        </div><div class="content">
+                            <h4>Fiabilité</h4>
+                        </div>
+                        <div class="content">
                             Je peux mettre en place un environnement de test automatisé (CI) 
                             pour améliorer la fiabilité de votre site.
                         </div>
@@ -206,10 +228,9 @@
                             <div>
                                 <i class="fa fa-database" aria-hidden="true"></i>
                             </div>
-                            <div class="lab">
-                                <b>Organisation des données</b>
-                            </div>
-                        </div><div class="content">
+                            <h4>Organisation des données</h4>
+                        </div>
+                        <div class="content">
                             J'utilise des technologies de base de données relationelles (MySQL, 
                             PostreSQL) pour enregistrer et structurer les données de votre site.
                         </div>
@@ -220,10 +241,9 @@
                             <div>
                                 <i class="fa fa-random" aria-hidden="true"></i>
                             </div>
-                            <div class="lab">
-                                <b>Rapidité</b>
-                            </div>
-                        </div><div class="content">
+                            <h4>Rapidité</h4>
+                        </div>
+                        <div class="content">
                             Je peux rendre certaines taches asynchrones pour rendre votre site 
                             plus fluide et plus rapide.
                         </div>
@@ -233,7 +253,6 @@
             </div>
         </div>
         <!-- //Back-End -->
-
 
 
         <!-- Front-End -->
@@ -251,10 +270,9 @@
                             <div>
                                 <i class="fa fa-desktop" aria-hidden="true"></i>
                             </div>
-                            <div class="lab">
-                                <b>Responsive design</b>
-                            </div>
-                        </div><div class="content">
+                            <h4>Responsive design</h4>
+                        </div>
+                        <div class="content">
                             Je m’assure que votre site soit responsive (adaptées aux différents 
                             supports numérique : Ordinateurs, tablettes, mobiles, …).
                         </div>
@@ -269,10 +287,9 @@
                             <div>
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </div>
-                            <div class="lab">
-                                <b>Expérience utilisateur</b>
-                            </div>
-                        </div><div class="content">
+                            <h4>Expérience utilisateur</h4>
+                        </div>
+                        <div class="content">
                             J’accorde une attention particulière à l’expérience utilisateur en maximisant 
                             l’ergonomie, la facilité d’utilisation et l’aspect visuel de votre site.
                         </div>
@@ -284,34 +301,7 @@
         <!-- //Front-End -->
 
 
-
         <!-- Marketing -->
-        <!--<div class="container">
-            <div><h3> Marketing </h3></div>
-
-
-            <div class="row">
-                <div class="col-md-6">
-                
-                    <div class="item">
-                        <b>Responsive design :</b>
-                        Je m’assure que vos applications soient responsive (adaptées aux différents 
-                        supports numérique : Ordinateurs, tablettes, mobiles, …).
-                    </div>
-
-                </div>
-
-                <div class="col-md-6">
-
-                    <div class="item">
-                        <b>UX / UI :</b>
-                        J’accorde une attention particulière à l’expérience utilisateur en maximisant 
-                        l’ergonomie, la facilité d’utilisation et l’aspect visuel des applications.
-                    </div>
-
-                </div>
-            </div>
-        </div>-->
         <!-- //Marketing -->
 
     </section>
@@ -331,7 +321,7 @@
                     <div class="visible-xs-block visible-sm-block">AERO : <i>outil de management de campagnes marketing</i></div>
 
                     <div class="hovereffect">
-                        <img class="img-responsive" src="images/aero/main-page.jpg" alt="">
+                        <img class="img-responsive" src="images/aero/main-page.jpg" alt="AERO">
                         <div class="overlay">
                             <h2>aero</h2>
                             <span class="info">outil de management de campagnes marketing</span>
@@ -346,7 +336,7 @@
                     <div class="visible-xs-block visible-sm-block">CCOOKIE : <i>interface d'analyse de la voix humaine</i></div>
                     
                     <div class="hovereffect">
-                        <img class="img-responsive" src="images/ccookie.jpg" alt="">
+                        <img class="img-responsive" src="images/ccookie.jpg" alt="CCOOKIE">
                         <div class="overlay">
                             <h2>ccookie</h2>
                             <span class="info">interface d'analyse de la voix humaine</span>
@@ -359,7 +349,7 @@
                     <div class="visible-xs-block visible-sm-block">SEPHORA : <i>bot de recommandation de cadeaux de noel</i></div>
                     
                     <div class="hovereffect">
-                        <img class="img-responsive" src="images/bot/bot.jpg" alt="">
+                        <img class="img-responsive" src="images/bot/bot.jpg" alt="BOT DE RECOMMANDATION">
                         <div class="overlay">
                             <h2>SEPHORA</h2>
                             <span class="info">bot de recommandation de cadeaux de noel</span>
@@ -374,7 +364,7 @@
                     <div class="visible-xs-block visible-sm-block">SEPHORA : <i>blog relatant les derniers travaux de l'equide data de sephora digital sea</i></div>
 
                     <div class="hovereffect">
-                        <img class="img-responsive" src="images/sephora-data.jpg" alt="">
+                        <img class="img-responsive" src="images/sephora-data.jpg" alt="SEPHORA-DATA BLOG">
                         <div class="overlay">
                             <h2>sephora data</h2>
                             <span class="info">blog relatant les derniers travaux de l'equide data de sephora digital sea</span>
@@ -407,7 +397,7 @@
 					</div>
 
 					<div class="col-md-6 col-sm-6 grid_6 c1">
-						<textarea name="Message" placeholder="Message" required=""></textarea>
+						<textarea name="Message" placeholder="Message" required></textarea>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -431,7 +421,7 @@
             </div>
 
             <div class="col-md-4">
-                <div><b>ALEXANDRE PECCAUD</b></div>
+                <div><strong>ALEXANDRE PECCAUD</strong></div>
                 <div class="icons">
                     <a href="https://fr.linkedin.com/in/alexandre-peccaud-3a2253b8" target="blank">
                         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
@@ -471,156 +461,11 @@
 
         <!-- jQuery --> <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
         <!-- Bootstrap --> <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-        <!-- typed.js - Animated text -->
-            <script src="js/typed.min.js"></script>
-            <script>
-                $(function(){
-                    $("header h2 span").typed({
-                        strings: ["WEB DEVELOPER", "INGENIEUR", "FREELANCER"],
-                        typeSpeed: 100,
-                        backSpeed: 50,
-                        backDelay: 3000,
-                        showCursor: true,
-                        cursorChar: "|",
-                        loop: true,
-                        // call when done callback function
-                        callback: function() {},
-                        // starting callback function before each string
-                        preStringTyped: function() {},
-                        //callback for every typed string
-                        onStringTyped: function() {},
-                        // callback for reset
-                        resetCallback: function() {}
-                    });
-                });
-            </script>
-        <!-- //typed.js -->
-
-        <!-- Smooth-Scrolling-JavaScript -->
-            <script src="js/easing.js"></script>
-            <script>
-                $(function($) {
-                    $(".scroll").click(function(event){
-                        event.preventDefault();
-                        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-                    });
-                });
-            </script>
-        <!-- //Smooth-Scrolling-JavaScript -->
-
-        <!-- Slide-To-Top JavaScript -->
-            <script src="js/move-top.js"></script>
-            <script>
-                $(function() {
-                    var defaults = {
-                        containerID: 'toTop',
-                        containerHoverID: 'toTopHover',
-                        scrollSpeed: 100,
-                        easingType: 'linear',
-                    };
-                    $().UItoTop({ easingType: 'easeOutQuart' });
-                });
-            </script>
-        <!-- //Slide-To-Top JavaScript -->
-
-        <!-- Waypoints (trigger event on scroll) -->
-            <script src="js/waypoints/lib/jquery.waypoints.min.js"></script>
-            <script>
-                $(function(){
-                    // Skills Items
-                    $('#skills .item1').css('opacity', 0);
-                    $('#skills .item2').css('opacity', 0);
-                    $('#skills .item3').css('opacity', 0);
-                    $('#skills .item4').css('opacity', 0);
-                    $('#skills .item5').css('opacity', 0);
-                    $('#skills .item6').css('opacity', 0);
-    
-                    $("#skills .item1").waypoint(function() {
-                        $('#skills .item1').addClass('animated fadeInLeft');
-                    }, { offset: '100%'});
-    
-                    $("#skills .item2").waypoint(function() {
-                        $('#skills .item2').addClass('animated fadeInLeft');
-                    }, { offset: '100%'});
-    
-                    $("#skills .item3").waypoint(function() {
-                        $('#skills .item3').addClass('animated fadeInRight');
-                    }, { offset: '100%'});
-    
-                    $("#skills .item4").waypoint(function() {
-                        $('#skills .item4').addClass('animated fadeInRight');
-                    }, { offset: '100%'});
-
-                    $("#skills .item5").waypoint(function() {
-                        $('#skills .item5').addClass('animated fadeInLeft');
-                    }, { offset: '100%'});
-
-                    $("#skills .item6").waypoint(function() {
-                        $('#skills .item6').addClass('animated fadeInRight');
-                    }, { offset: '100%'});
-                    // //Skills Items
-
-                    // Work Items
-                    $('#work .hovereffect').css('opacity', 0);
-
-                    $("#work .hovereffect").waypoint(function() {
-                        $('#work .hovereffect').addClass('animated fadeIn');
-                    }, { offset: '100%'});
-                    // //Work Items
-                });
-            </script>
-        <!-- //Waypoints (trigger event on scroll) -->
-
-        <!-- Send Email -->
-        <script>
-        $('#contactForm').submit(function(e){
-            e.preventDefault();
-            var data = $('#contactForm').serializeArray();
-
-            var message = `
-                Name : ${data[0].value}
-                Reply to : ${data[1].value}
-                Tel : ${data[2].value}
-                Message : ${data[3].value}
-            `;
-
-            $.ajax({
-                url: "https://formspree.io/alexandre.peccaud@gmail.com", 
-                method: "POST",
-                data: {message: message},
-                dataType: "json",
-                success: function(resp, status) {
-                    // Show banner
-                    $("#banner").html("MESSAGE SUCCESSFULLY SENT");
-                    $('#banner').fadeTo(500, 1, function() {
-                        $("#banner").css("display","block");
-                    });
-                    setTimeout(function() {
-                        $('#banner').fadeTo(500, 0, function() {
-                            $("#banner").css("display","none");
-                        });
-                    }, 3000);
-
-                    // Reset form
-                    $('#contactForm').trigger("reset");
-                },
-                error: function() {
-                    // Show banner
-                    $("#banner").html("ERROR WHILE SENDING THE MESSAGE, PLEASE CONTACT DIRECTLY alexandre.peccaud@gmail.com");
-                    $('#banner').fadeTo(500, 1, function() {
-                        $("#banner").css("display","block");
-                    });
-                    setTimeout(function() {
-                        $('#banner').fadeTo(500, 0, function() {
-                            $("#banner").css("display","none");
-                        });
-                    }, 3000);
-                }
-            });
-        });
-        </script>
-        <!-- //Send Email -->
+        <!-- typed.js - Animated text --> <script src="js/typed.min.js"></script>
+        <!-- Smooth-Scrolling-JavaScript --> <script src="js/easing.js"></script>
+        <!-- Slide-To-Top JavaScript --> <script src="js/move-top.js"></script>
+        <!-- Waypoints (trigger event on scroll) --> <script src="js/waypoints/lib/jquery.waypoints.min.js"></script>
+        <!-- Main --> <script src="js/main.js"></script>
 
     <!-- //Custom-JavaScript-File-Links -->
 
