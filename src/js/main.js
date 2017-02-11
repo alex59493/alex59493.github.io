@@ -39,7 +39,7 @@ $(function(){
         containerID: 'toTop',
         containerHoverID: 'toTopHover',
         scrollSpeed: 100,
-        easingType: 'linear',
+        easingType: 'linear'
     };
     $().UItoTop({ easingType: 'easeOutQuart' });
 
@@ -47,6 +47,8 @@ $(function(){
 
     /*
         Waypoints (trigger event on scroll)
+
+        NOTE : Add all the "animate.css" class in the ignore option in gulp-uncss
     */
 
     // Skills Items
@@ -99,12 +101,10 @@ $(function(){
         e.preventDefault();
         var data = $('#contactForm').serializeArray();
 
-        var message = `
-            Name : ${data[0].value}
-            Reply to : ${data[1].value}
-            Tel : ${data[2].value}
-            Message : ${data[3].value}
-        `;
+        var message = "Name : " + data[0].value +
+            "Reply to : " + data[1].value +
+            "Tel : " + data[2].value +
+            "Message : " + data[3].value
 
         $.ajax({
             url: "https://formspree.io/alexandre.peccaud@gmail.com", 
