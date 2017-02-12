@@ -32,6 +32,17 @@ module.exports = function (grunt) {
                 }
             }
         },
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: {
+                    'index.html': 'index.html'
+                }
+            }
+        },
         watch: {
             scripts: {
                 files: 'src/js/*.js',
@@ -53,8 +64,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-uncss')
     grunt.loadNpmTasks('grunt-contrib-cssmin')
     grunt.loadNpmTasks('grunt-processhtml')
+    grunt.loadNpmTasks('grunt-contrib-htmlmin')
     grunt.loadNpmTasks('grunt-contrib-watch')
 
     // Define tasks
-    grunt.registerTask('default', ['uglify', 'uncss', 'cssmin', 'processhtml'])
+    grunt.registerTask('default', ['uglify', 'uncss', 'cssmin', 'processhtml', 'htmlmin'])
 }
