@@ -54,7 +54,7 @@ module.exports = function (grunt) {
             },
             index: {
                 files: 'src/index.html',
-                tasks: ['uncss', 'cssmin', 'processhtml']
+                tasks: ['uncss', 'cssmin', 'processhtml', 'htmlmin']
             }
         }
     })

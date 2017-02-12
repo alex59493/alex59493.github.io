@@ -58,17 +58,19 @@ $(function(){
     $('#skills .item4').css('opacity', 0);
     $('#skills .item5').css('opacity', 0);
     $('#skills .item6').css('opacity', 0);
+    $('#skills .item7').css('opacity', 0);
+    $('#skills .item8').css('opacity', 0);
 
     $("#skills .item1").waypoint(function() {
         $('#skills .item1').addClass('animated fadeInLeft');
     }, { offset: '100%'});
 
     $("#skills .item2").waypoint(function() {
-        $('#skills .item2').addClass('animated fadeInLeft');
+        $('#skills .item2').addClass('animated fadeInRight');
     }, { offset: '100%'});
 
     $("#skills .item3").waypoint(function() {
-        $('#skills .item3').addClass('animated fadeInRight');
+        $('#skills .item3').addClass('animated fadeInLeft');
     }, { offset: '100%'});
 
     $("#skills .item4").waypoint(function() {
@@ -81,6 +83,14 @@ $(function(){
 
     $("#skills .item6").waypoint(function() {
         $('#skills .item6').addClass('animated fadeInRight');
+    }, { offset: '100%'});
+
+    $("#skills .item7").waypoint(function() {
+        $('#skills .item7').addClass('animated fadeInLeft');
+    }, { offset: '100%'});
+
+    $("#skills .item8").waypoint(function() {
+        $('#skills .item8').addClass('animated fadeInRight');
     }, { offset: '100%'});
     // //Skills Items
 
