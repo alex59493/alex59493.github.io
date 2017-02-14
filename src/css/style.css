@@ -67,6 +67,7 @@
 		margin: 0;
 		padding: 0;
 		text-align: center;
+		font-family: 'Roboto', sans-serif;
 	}
 
 	p {
@@ -282,6 +283,10 @@
 		text-align: justify;
 	}
 
+	#presentation p strong {
+		font-weight: 1000;
+	}
+
 	#presentation .photo {
 		float: right;
 		width: 300px;
@@ -362,6 +367,10 @@
 		margin-bottom: 25px;
 	}
 
+	#skills h4 {
+		font-family: 'Lato', 'Regular';
+	}
+
 	#skills .container {
 		padding-top: 20px;
 	}
@@ -431,7 +440,7 @@
 		overflow: hidden;
 		position: relative;
 		text-align: center;
-		cursor: default;
+		cursor: pointer;
 	}
 
 	#work .hovereffect .overlay {
@@ -507,6 +516,21 @@
 
 	#work .visible-xs-block {
 		color: #5e5e5e;
+	}
+
+	#work .modalWork .modal-body {
+		padding: 30px;
+		text-align: justify;
+	}
+
+	#work .modalWork .modal-body ul li {
+		position: relative;
+		left: 2em;
+		padding-right: 2em;
+	}
+
+	#work .modalWork img {
+		margin-bottom: 30px;
 	}
 
 /*-- //Work Section --*/

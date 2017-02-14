@@ -35,14 +35,12 @@
     <link rel="icon" type="image/png" href="/dist/images/favicon-16.png" />
 
     <!-- Custom-Stylesheet-Links -->
-
-        <!-- build:css dist/css/styles.min.css -->
-            <link rel="stylesheet" href="css/bootstrap.min.css">
-            <link rel="stylesheet" href="css/font-awesome.min.css">
-            <link rel="stylesheet" href="css/animate.css">
-            <link rel="stylesheet" href="css/style.css">
-        <!-- /build -->
-
+    <!-- build:css dist/css/styles.min.css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/style.css">
+    <!-- /build -->
     <!-- //Custom-Stylesheet-Links -->
 
     <!-- Fonts -->
@@ -347,10 +345,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-2">
+                    <!-- AERO -->
                     <div class="visible-xs-block visible-sm-block">
                         AERO : <i>outil de management de campagnes marketing</i>
                     </div>
-                    <div class="hovereffect">
+                    <div class="hovereffect" data-toggle="modal" data-target="#aeroModal">
                         <img class="img-responsive" src="dist/images/aero/main-page.jpg" alt="AERO">
                         <div class="overlay">
                             <h2>aero</h2>
@@ -362,7 +361,7 @@
                     <div class="visible-xs-block visible-sm-block">
                         SEPHORA : <i>bot de recommandation de cadeaux de noel</i>
                     </div>
-                    <div class="hovereffect">
+                    <div class="hovereffect" data-toggle="modal" data-target="#botModal">
                         <img class="img-responsive" src="dist/images/bot/bot.jpg" alt="BOT DE RECOMMANDATION">
                         <div class="overlay">
                             <h2>SEPHORA</h2>
@@ -376,7 +375,7 @@
                     <div class="visible-xs-block visible-sm-block">
                         CCOOKIE : <i>interface d'analyse de la voix humaine</i>
                     </div>
-                    <div class="hovereffect">
+                    <div class="hovereffect" data-toggle="modal" data-target="#ccookieModal">
                         <img class="img-responsive" src="dist/images/ccookie.jpg" alt="CCOOKIE">
                         <div class="overlay">
                             <h2>ccookie</h2>
@@ -388,11 +387,119 @@
                     <div class="visible-xs-block visible-sm-block">
                         SEPHORA : <i>blog relatant les derniers travaux de l'equide data de sephora digital sea</i>
                     </div>
-                    <div class="hovereffect">
+                    <div class="hovereffect" data-toggle="modal" data-target="#blogModal">
                         <img class="img-responsive" src="dist/images/sephora-data.jpg" alt="SEPHORA-DATA BLOG">
                         <div class="overlay">
                             <h2>sephora data</h2>
                             <span class="info">blog relatant les derniers travaux de l'equide data de sephora digital sea</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal AERO -->
+        <div class="modal fade modalWork" id="aeroModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">AERO</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="col-md-6">
+                                <img src="dist/images/screen-aero.png" alt="AERO">
+                            </div>
+                            <div class="col-md-6">
+                                <span>
+                                    AERO est un progiciel de gestion de campagnes marketing utilisé au sein de l'entreprise SEPHORA SEA (South-East Asia).<br><br>
+                                    AERO a d'abord été conçu afin de rationaliser le processus de création de campagnes marketing en :
+                                    <ul>
+                                        <li>Standardisant le vocabulaire utilisé</li>
+                                        <li>Facilitant l'échange d'information entre les différentes parties prenantes</li>
+                                        <li>Archivant toutes les campagnes créées</li>
+                                    </ul>
+                                    <br>
+                                    De plus, en collectant différentes "meta-data" autour de ces campagnes, AERO fournit d'importantes données sur l'efficacité de ces campagnes (Retour sur investissement, channels les plus efficaces, etc) et pourra, sur le long terme, devenir un réel outil d'assistance à la création de campagnes marketing.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal BOT -->
+        <div class="modal fade modalWork" id="botModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">BOT DE RECOMMANDATION</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="col-md-6">
+                                <img src="dist/images/screen-bot.png" alt="BOT DE RECOMMANDATION">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="content">
+                                    Programme autonome communiquant avec un utilisateur afin de l'aider à choisir un bon cadeau de Noel.<br><br>
+                                    Le bot pose une série de questions à l'utilisateur afin de mieux connaitre le destinataire du cadeau et de lui proposer des recommandations personalisées basées sur les meilleurs ventes des produits SEPHORA.<br><br>
+                                    L'utilisateur communique naturellement avec le bot, comme s'il communiquait à un être humain. Le bot, lui, utilise différents algorithmes de "Natural Language Processing" afin d'interpréter les messages de l'utilisateur et d'en extraire des informations utiles.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal BOT -->
+        <div class="modal fade modalWork" id="ccookieModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">CCOOKIE</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="col-md-6">
+                                <img src="dist/images/screen-ccookie.png" alt="CCOOKIE">
+                            </div>
+                            <div class="col-md-6">
+                                <span>
+                                    Interface permettant d’analyser différentes caractéristiques de la voix humaine (intonation, débit de parole, taux d'écoute, …).<br><br>
+                                    L’application sert de support de formation et permet d’améliorer les compétences commerciales des participants.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal BOT -->
+        <div class="modal fade modalWork" id="blogModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">SEPHORA-DATA BLOG</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="col-md-6">
+                                <img src="dist/images/screen-blog.png" alt="BLOG">
+                            </div>
+                            <div class="col-md-6">
+                                <span>
+                                    Blog utilisé en interne par l'entreprise SEPHORA SEA (South-East Asia) relatant les derniers travaux de l'équipe DATA.<br><br>
+                                    Le blog est un moyen de communiquer efficacement l'information entre les différentes équipes au sein de l'entreprise et d'archiver ces informations.
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -482,9 +589,7 @@
 
 
     <!-- Custom-JavaScript-File-Links -->
-
-        <script async src="dist/js/main.min.js"></script>
-
+    <script async src="dist/js/main.min.js"></script>
     <!-- //Custom-JavaScript-File-Links -->
 
 

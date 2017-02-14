@@ -8,20 +8,23 @@ module.exports = function (grunt) {
                 }
             }
         },
-        uncss: {
-            options : {
-                ignore : ['.animated', '.fadeInLeft', '.fadeInRight', '.fadeIn']
-            },
-            dist: {
-                files: {
-                    'dist/css/styles.min.css': ['src/index.html']
-                }
-            }
-        },
+        // uncss: {
+        //     options : {
+        //         ignore : [
+        //             '.animated', '.fadeInLeft', '.fadeInRight', '.fadeIn',
+        //             /\.modal[.\-a-zA-Z0-9]*/, '.open'
+        //         ]
+        //     },
+        //     dist: {
+        //         files: {
+        //             'dist/css/styles.min.css': ['src/index.html']
+        //         }
+        //     }
+        // },
         cssmin: {
             dist: {
                 files: {
-                    'dist/css/styles.min.css': ['dist/css/styles.min.css']
+                    'dist/css/styles.min.css': ['src/css/*.css']
                 }
             }
         },
@@ -50,23 +53,26 @@ module.exports = function (grunt) {
             },
             styles: {
                 files: 'src/css/*.css',
-                tasks: ['uncss', 'cssmin']
+                // tasks: ['uncss', 'cssmin']
+                tasks: ['cssmin']
             },
             index: {
                 files: 'src/index.html',
-                tasks: ['uncss', 'cssmin', 'processhtml', 'htmlmin']
+                // tasks: ['uncss', 'cssmin', 'processhtml', 'htmlmin']
+                tasks: ['cssmin', 'processhtml', 'htmlmin']
             }
         }
     })
 
     // Load plugins
     grunt.loadNpmTasks('grunt-contrib-uglify')
-    grunt.loadNpmTasks('grunt-uncss')
+    // grunt.loadNpmTasks('grunt-uncss')
     grunt.loadNpmTasks('grunt-contrib-cssmin')
     grunt.loadNpmTasks('grunt-processhtml')
     grunt.loadNpmTasks('grunt-contrib-htmlmin')
     grunt.loadNpmTasks('grunt-contrib-watch')
 
     // Define tasks
-    grunt.registerTask('default', ['uglify', 'uncss', 'cssmin', 'processhtml', 'htmlmin'])
+    // grunt.registerTask('default', ['uglify', 'uncss', 'cssmin', 'processhtml', 'htmlmin'])
+    grunt.registerTask('default', ['uglify', 'cssmin', 'processhtml', 'htmlmin'])
 }
