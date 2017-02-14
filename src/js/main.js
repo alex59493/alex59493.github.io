@@ -111,9 +111,9 @@ $(function(){
         e.preventDefault();
         var data = $('#contactForm').serializeArray();
 
-        var message = "Name : " + data[0].value +
-            "Reply to : " + data[1].value +
-            "Tel : " + data[2].value +
+        var message = "Name : " + data[0].value + " " +
+            "Reply to : " + data[1].value + " " +
+            "Tel : " + data[2].value + " " +
             "Message : " + data[3].value
 
         $.ajax({

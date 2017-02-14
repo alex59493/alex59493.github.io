@@ -523,6 +523,12 @@
 		text-align: justify;
 	}
 
+	.vcenter {
+		display: inline-block;
+		vertical-align: middle;
+		float: none;
+	}
+
 	#work .modalWork .modal-body ul li {
 		position: relative;
 		left: 2em;
@@ -560,7 +566,7 @@
 		color: white;
 	}
 
-	#contact .contact_form input[type='text'], .contact_form input[type="email"] {
+	#contact #contactForm input[type='text'], #contactForm input[type="email"] {
 		width: 100%;
 		border-radius: 0;
 		line-height: 22px;
@@ -574,7 +580,7 @@
 		background: rgba(0, 0, 0, 0.8);
 	}
 
-	#contact .contact_form textarea {
+	#contact #contactForm textarea {
 		width: 100%;
 		border-radius: 0;
 		line-height: 22px;
@@ -591,7 +597,7 @@
 		background: rgba(0, 0, 0, 0.8);
 	}
 
-	#contact form.contact_form {
+	#contact form#contactForm {
 		text-align: center;
 	}
 
@@ -599,7 +605,7 @@
 		margin-bottom: 30px;
 	}
 
-	#contact .more_btn {
+	#contact .submit {
 		padding: 13px 30px;
 		border: 1px solid #d5d5d5;
 		font-size: 16px;
@@ -615,7 +621,7 @@
 		cursor: pointer;
 	}
 
-	#contact .more_btn:hover {
+	#contact .submit:hover {
 		color: #FFF;
 		background-color: #607d8b;
 	}
