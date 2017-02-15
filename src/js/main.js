@@ -123,7 +123,7 @@ $(function(){
             dataType: "json",
             success: function(resp, status) {
                 // Show banner
-                $("#banner").html("MESSAGE SUCCESSFULLY SENT");
+                $("#banner").html("LE MESSAGE A BIEN ETE ENVOYE");
                 $('#banner').fadeTo(500, 1, function() {
                     $("#banner").css("display","block");
                 });
@@ -138,7 +138,7 @@ $(function(){
             },
             error: function() {
                 // Show banner
-                $("#banner").html("ERROR WHILE SENDING THE MESSAGE, PLEASE CONTACT DIRECTLY alexandre.peccaud@gmail.com");
+                $("#banner").html("ERREUR LORS DE L'ENVOI DU MESSAGE, MERCI DE CONTACTER DIRECTEMENT alexandre.peccaud@gmail.com");
                 $('#banner').fadeTo(500, 1, function() {
                     $("#banner").css("display","block");
                 });
