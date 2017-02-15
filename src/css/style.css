@@ -22,6 +22,39 @@
 		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
 		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 	}
+	/* latin-ext */
+	@font-face {
+		font-family: 'Lato';
+		font-style: normal;
+		font-weight: 700;
+		src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v13/rZPI2gHXi8zxUjnybc2ZQFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+		unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+	}
+	/* latin */
+	@font-face {
+		font-family: 'Lato';
+		font-style: normal;
+		font-weight: 700;
+		src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v13/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+	}
+
+	/* latin-ext */
+	@font-face {
+		font-family: 'Raleway';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/YZaO6llzOP57DpTBv2GnyFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+		unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+	}
+	/* latin */
+	@font-face {
+		font-family: 'Raleway';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+	}
 
 /*-- //Fonts --*/
 
@@ -33,7 +66,7 @@
 		padding: 0;
 		margin: 0;
 		background: #FFF;
-		font-family: 'Lato', sans-serif;
+		font-family: 'Lato', 'Regular';
 		font-size: 16px;
 		overflow-x: hidden;
 	}
@@ -62,7 +95,7 @@
 		margin: 0;
 		padding: 0;
 		text-align: center;
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Raleway', sans-serif;
 	}
 
 	p {
@@ -96,6 +129,7 @@
 	header {
 		height: 100vh;
 		width: 100vw;
+		margin-bottom: 50px;
 		background-color: black;
 		background-image: url("../images/header-background.jpg");
 		background-repeat: no-repeat;
@@ -127,6 +161,7 @@
 		margin: 0 auto;
 		padding: 75px 0;
 		font-size: 4vw;
+		font-family: 'Latin', sans-serif;
 		letter-spacing: 3px;
 		font-weight: 700;
 		color: #FFF;
@@ -142,6 +177,7 @@
 		width: 35%;
 		margin: 0 auto;
 		padding: 20px 0;
+		font-family: 'Latin', sans-serif;
 		font-size: 2vw;
 		letter-spacing: 2px;
 		font-weight: 700;
@@ -231,7 +267,6 @@
 	}
 
 	header nav .nav-item-back h3 {
-		font-family: 'Montserrat', sans-serif;
 		font-size: 18px;
 		font-weight: 700;
 		margin-top: 35px;
@@ -247,17 +282,17 @@
 
 	#presentation {
 		padding: 50px 0;
-		padding-top: 100px;
 	}
 
 	#presentation .container > div {
-		padding-top: 30px;
+		padding-top: 20px;
 	}
 
 	#presentation h2 {
 		font-size: 50px;
-		font-weight: 500;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
+		letter-spacing: 2px;
+		
 	}
 
 	#presentation h3 {
@@ -277,7 +312,7 @@
 	}
 
 	#presentation p strong {
-		font-weight: 1000;
+		font-weight: bold;
 	}
 
 	#presentation .photo {
@@ -294,7 +329,6 @@
 	}
 
 	#presentation ul li .li1 {
-		font-family: 'Montserrat', sans-serif;
 		width: 20%;
 		float: left;
 		font-weight: 700;
@@ -346,8 +380,7 @@
 
 	#skills h2 {
 		font-size: 50px;
-		font-weight: 500;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 
 	#skills h3 {
@@ -419,8 +452,7 @@
 
 	#work h2 {
 		font-size: 50px;
-		font-weight: 500;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 
 	#work .hovereffect {
@@ -735,8 +767,8 @@
 
 	/*-- Presentation --*/
 
-		#presentation .container > div {
-			padding-top: 60px;
+		#presentation .container div:last-child h3 {
+			padding-top: 30px;
 		}
 
 	/*-- Presentation --*/
@@ -748,7 +780,25 @@
 /*-- Phone --*/
 @media screen and (min-width: 1px) and (max-width: 576px)
 {
+	/*-- All document --*/
+		h2 {
+			font-size: 30px !important;
+		}
+		h3 {
+			font-size: 20px !important;
+		}
+		section {
+			padding-top: 30px !important;
+		}
+	/*-- //All document --*/
+
 	/*-- Header --*/
+		header {
+			background-attachment: scroll;
+		}
+		header h2 {
+			font-size: 3vw !important;
+		}
 		header nav .nav-item {
 			width: 70px;
 			height: 70px;
@@ -787,5 +837,11 @@
 			width: 100%;
 		}
 	/*-- //Presentation --*/
+
+	/*-- Contact --*/
+		#contact {
+			background-attachment: scroll;
+		}
+	/*-- //Contact --*/
 }
 /*-- //Phone --*/
