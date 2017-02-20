@@ -56,8 +56,36 @@
 
 
 
+    <!-- Nav bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand scroll" href="#header">Alexandre Peccaud</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="scroll" href="#presentation"><i class="fa fa-user" aria-hidden="true"></i> Moi</a></li>
+                    <li><a class="scroll" href="#skills"><i class="fa fa-desktop" aria-hidden="true"></i> Skills</a></li>
+                    <li><a class="scroll" href="#work"><i class="fa fa-suitcase" aria-hidden="true"></i> Travaux</a></li>
+                    <li><a class="scroll" href="#contact"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- // Nav bar -->
+
+
+
     <!-- Header -->
-    <header>
+    <header id="header">
         
         <div class="overlay"></div>
 
@@ -66,7 +94,7 @@
         <h2> - <span>WEB DEVELOPER</span> - </h2>
 
         <!-- Navigation -->
-        <nav>
+        <div class="nav">
 
             <div class="container">
                 <div class="col-md-2 col-sm-3 col-xs-6 col-md-offset-2 col-sm-offset-3">
@@ -77,7 +105,7 @@
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </div>
                             <div class="nav-item-back">
-                                <h3>ABOUT</h3>
+                                <h3>MOI</h3>
                             </div>
                         </a>
                     </div>
@@ -103,7 +131,7 @@
                                 <i class="fa fa-suitcase" aria-hidden="true"></i>
                             </div>
                             <div class="nav-item-back">
-                                <h3>WORK</h3>
+                                <h3>TRAVAUX</h3>
                             </div>
                         </a>
                     </div>
@@ -123,7 +151,7 @@
                 </div>
             </div>
 
-        </nav>
+        </div>
         <!-- //Navigation -->
 
     </header>
@@ -137,42 +165,18 @@
         <h2> A PROPOS DE MOI </h2>
 
         <div class="container">
-            <div class="col-md-8">
-
-                <div><h3> MON HISTOIRE </h3></div>
-
-                <!--Photo--><img src="dist/images/photo.png" alt="photo" class="photo"><!--//Photo-->
+            <div class="col-md-10 col-md-offset-1">
+                <!--Photo-->
+                <img src="dist/images/photo.png" alt="photo" class="photo">
+                <!--//Photo-->
 
                 <p>
                     Bonjour, je suis Alexandre.
                     <br><br>
                     Passionné par le <strong>développement Web</strong> depuis plus de quatre ans, j’ai créé mon auto-entreprise afin de mettre mes compétences et mes connaissances au service de vos projets. Je suis spécialisé dans le <strong>développement de sites internet</strong> et d’<strong>applications Web</strong>.
                     <br><br>
-                    Ayant de solides notions en programmation back-end (côté serveur), front-end (côté client) et marketing, je vous propose des <strong>solutions complètes et entièrement personnalisées</strong> selon vos demandes. Je vous aide à choisir le <strong>support digital</strong> le plus adapté à votre entreprise (site vitrine, e-commerce, blog, ...) et mets en place les bonnes pratiques pour améliorer votre <strong>visibilité sur le net</strong> et votre <strong>identité digitale</strong>.
+                    Ayant de solides notions en programmation back-end, front-end et marketing, je vous propose des <strong>solutions complètes et entièrement personnalisées</strong> selon vos demandes. Je vous aide à choisir le <strong>support digital</strong> le plus adapté à votre entreprise (site vitrine, e-commerce, blog, ...) et mets en place les bonnes pratiques pour améliorer votre <strong>visibilité sur le net</strong> et votre <strong>identité digitale</strong>.
                 </p>
-            </div>
-
-            <div class="col-md-4">
-
-                <div><h3> CONTACT </h3></div>
-
-                <ul>
-                    <li itemscope itemtype="http://schema.org/Person">
-                        <div class="li1">Nom</div><div class="li2">:</div><div class="li3" itemprop="name">Alexandre PECCAUD</div>
-                    </li>
-                    <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <div class="li1">Addresse</div><div class="li2">:</div><div class="li3"><span itemprop="addressLocality">Lille</span>, <span itemprop="addressRegion">Nord</span></div>
-                    </li>
-                    <li>
-                        <div class="li1">Tel</div><div class="li2">:</div><div class="li3"><a href="tel://+33666508996">+33 6 66 50 89 96</a></div>
-                    </li>
-                    <li>
-                        <div class="li1">Email</div><div class="li2">:</div><div class="li3"><a class="mail" href="mailto:alexandre.peccaud@gmail.com">alexandre.peccaud@gmail.com</a></div>
-                    </li>
-                    <li>
-                        <div class="li1">Linkedin</div><div class="li2">:</div><div class="li3"><a href="https://fr.linkedin.com/in/alexandre-peccaud-3a2253b8" target="blank" rel="nofollow">Alexandre PECCAUD</a></div>
-                    </li>
-                </ul>
             </div>
         </div>
 
@@ -524,8 +528,8 @@
 				<div class="message">
 					<div class="col-md-6 col-sm-6 grid_6">
 						<input type="text" Name="name" placeholder="Nom" required>
-						<input type="email" Name="email" placeholder="Répondre à (email)">
-						<input type="text" Name="phone" placeholder="Numéro de téléphone">
+						<input type="email" Name="email" placeholder="Email">
+						<input type="text" Name="phone" placeholder="Numéro de téléphone (optionnel)">
 					</div>
 
 					<div class="col-md-6 col-sm-6 grid_6">
@@ -549,11 +553,12 @@
 
         <div class="container">
             <div class="col-md-4">
-                <div>Tel: +33 6 66 50 89 96</div>
+                <div class="c1"><b>Mail:</b> <a href="mailto:alexandre.peccaud@gmail.com">alexandre.peccaud@gmail.com</a></div>
+                <div class="c1"><b>Tel:</b> <a href="tel://+33666508996">+33 6 66 50 89 96</a></div>
             </div>
 
-            <div class="col-md-4">
-                <div><strong>ALEXANDRE PECCAUD</strong></div>
+            <div class="col-md-4 center">
+                <div itemscope itemtype="http://schema.org/Person"><strong itemprop="name">ALEXANDRE PECCAUD</strong></div>
                 <div class="icons">
                     <a href="https://fr.linkedin.com/in/alexandre-peccaud-3a2253b8" target="blank">
                         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
@@ -563,10 +568,6 @@
                         <i class="fa fa-github-square" aria-hidden="true"></i>
                     </a>
                 </div>
-            </div>
-
-            <div class="col-md-4">
-                <div>Mail: <a href="mailto:alexandre.peccaud@gmail.com">alexandre.peccaud@gmail.com</a></div>
             </div>
         </div>
 
@@ -580,12 +581,6 @@
         <!--BANNER MESSAGE-->
     </div>
     <!-- //Banner -->
-
-
-    
-    <!-- Arrow to top smooth scroll -->
-    <a href="#" id="toTop" class="" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
-    <!-- //Arrow to top smooth scroll -->
 
 
 

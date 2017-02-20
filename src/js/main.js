@@ -33,19 +33,6 @@ $(function(){
 
 
     /*
-        Slide-To-Top JavaScript
-    */
-    var defaults = {
-        containerID: 'toTop',
-        containerHoverID: 'toTopHover',
-        scrollSpeed: 100,
-        easingType: 'linear'
-    };
-    $().UItoTop({ easingType: 'easeOutQuart' });
-
-
-
-    /*
         Waypoints (trigger event on scroll)
 
         NOTE : Add all the "animate.css" class in the ignore option in gulp-uncss
@@ -150,4 +137,45 @@ $(function(){
             }
         });
     });
+
+
+
+    /*
+        Navbar Show / Hide
+    */
+    $(window).on("scroll", function () {
+        // Init
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $('nav').css('animation-duration', '0.5s');
+        // Show Navbar
+        if ($(this).scrollTop() > $(window).height()) {
+            if ($('nav').css('display') === 'none') {
+                $('nav').css('display', 'block');
+                $('nav').addClass('animated fadeInDown').one(animationEnd, function() {
+                    $('nav').removeClass('animated fadeInDown');
+                });
+            }
+        }
+        // Hide Navbar
+        else {
+            if ($('nav').css('display') === 'block') {
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                $('nav').addClass('animated fadeOutUp').one(animationEnd, function() {
+                    $('nav').removeClass('animated fadeOutUp');
+                    $('nav').css('display', 'none');
+                });
+            }
+        }
+    })
+
+    // Close navbar when click on item
+    $("nav .scroll").click(function() {
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    // Scroll spy
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 400
+    })
 });
