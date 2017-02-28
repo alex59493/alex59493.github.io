@@ -173,6 +173,16 @@ $(function(){
         $('.navbar-collapse').collapse('hide');
     });
 
+    // Close navbar when click outside
+    $('body').bind('click', function(e) {
+        if ($(e.target).closest('.navbar').length === 0) {
+            var opened = $('.navbar-collapse').hasClass('collapse in');
+            if (opened === true) {
+                $('.navbar-collapse').collapse('hide');
+            }
+        }
+    });
+
     // Scroll spy
     $('body').scrollspy({
         target: '.navbar-fixed-top',
