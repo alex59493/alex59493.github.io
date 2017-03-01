@@ -1,0 +1,87 @@
+{
+    "presentation": {
+        "h2": "A PROPOS DE MOI",
+        "p": "Bonjour, je suis Alexandre. <br><br> Passionné par le <strong>développement Web</strong> depuis plus de quatre ans, j’ai créé mon auto-entreprise afin de mettre mes compétences et mes connaissances au service de vos projets. Je suis spécialisé dans le <strong>développement de sites internet</strong> et d’<strong>applications Web</strong>. <br><br> Ayant de solides compétences en programmation back-end, front-end et marketing, je vous propose des <strong>solutions complètes et entièrement personnalisées</strong> selon vos demandes. Je vous aide à choisir le <strong>support digital</strong> le plus adapté à votre entreprise (site vitrine, e-commerce, blog, ...) et mets en place les bonnes pratiques pour améliorer votre <strong>visibilité sur le net</strong> et votre <strong>identité digitale</strong>."
+    },
+    "skills": {
+        "h2": "MES COMPETENCES",
+        "backend": {
+            "description": "J’utilise différentes technologies Back-end (côté serveur) pour maximiser les performances et la sécurité de vos sites Internet.",
+            "item1": {
+                "label": "Sécurité",
+                "description": "J'utilise des langages de programmation robustes et mets en place les bonnes pratiques de sécurité sur votre site."
+            },
+            "item2": {
+                "label": "Fiabilité",
+                "description": "Je m'assure de tester les fonctionnalités de votre site internet dans différents cas d'utilisation afin de garantir leur fiabilité sur le long terme."
+            },
+            "item3": {
+                "label": "Organisation des données",
+                "description": "J'utilise des technologies de base de données relationelles (MySQL, PostreSQL) pour enregistrer et structurer les données de votre site."
+            },
+            "item4": {
+                "label": "Rapidité",
+                "description": "Je m'efforce d'écourter les temps de chargement au minimum et accélérer l'execution des différentes tâches de votre site."
+            }
+        },
+        "frontend": {
+            "description": "J’utilise les dernières technologies Front-end (côté client) pour améliorer l'expérience utilisateur et épurer l'interface de vos sites Internet.",
+            "item1": {
+                "label": "Responsive design",
+                "description": "Je m’assure que votre site soit adapté aux différents supports numériques modernes (Ordinateurs, tablettes, mobiles, …)."
+            },
+            "item2": {
+                "label": "Expérience utilisateur",
+                "description": "J’accorde une attention particulière à l’expérience utilisateur en maximisant l’ergonomie, la facilité d’utilisation et l’aspect visuel de votre site."
+            }
+        },
+        "marketing": {
+            "description": "J'accorde beaucoup d'importance à l'aspect Marketing de votre site pour améliorer votre image et votre visibilité sur le net.",
+            "item1": {
+                "label": "Référencement",
+                "description": "Je mets en place les bonnes pratiques SEO (Search Engine Optimization) pour améliorer la position de votre site dans les résultats des différents moteurs de recherche."
+            },
+            "item2": {
+                "label": "Web analyse",
+                "description": "En installant Google Analytics sur votre site, je vous mets à dispostion un outil vous fournissant des rapports complets sur le traffic de votre site."
+            }
+        }
+    },
+    "work": {
+        "h2": "MES REALISATIONS",
+        "item1": {
+            "label": "aero",
+            "shortDescription": "outil de management de campagnes marketing",
+            "longDescription": "AERO est un progiciel de gestion de campagnes marketing utilisé au sein de l'entreprise SEPHORA DIGITAL SEA (South-East Asia).<br><br> AERO a d'abord été conçu afin de rationaliser le processus de création de campagnes marketing en : <ul><li>Standardisant le vocabulaire utilisé</li><li>Facilitant l'échange d'information entre les différentes parties prenantes</li><li>Archivant toutes les campagnes créées</li></ul><br>De plus, en collectant différentes \"meta-data\" autour de ces campagnes, AERO fournit d'importantes données sur l'efficacité de ces campagnes (Retour sur investissement, channels les plus efficaces, etc). Il pourra, sur le long terme, devenir un réel outil d'assistance à la création de campagnes marketing."
+        },
+        "item2": {
+            "label": "SEPHORA",
+            "shortDescription": "bot de recommandation de cadeaux de noel",
+            "longDescription": "Programme autonome communiquant avec un utilisateur afin de l'aider à choisir un bon cadeau de Noel.<br><br> Le bot pose une série de questions à l'utilisateur afin de mieux connaitre le destinataire du cadeau pour lui proposer des recommandations personalisées basées sur les meilleurs ventes des produits SEPHORA.<br><br> L'utilisateur communique naturellement avec le bot, comme s'il communiquait avec un être humain. Le bot, lui, utilise différents algorithmes de \"Natural Language Processing\" afin d'interpréter les messages de l'utilisateur et d'en extraire des informations utiles."
+        },
+        "item3": {
+            "label": "ccookie",
+            "shortDescription": "interface d'analyse de la voix humaine",
+            "longDescription": "Interface permettant d’analyser différentes caractéristiques de la voix humaine (intonation, débit de parole, taux d'écoute, etc).<br><br> L’application sert de support de formation et permet d’améliorer les compétences commerciales des participants."
+        },
+        "item4": {
+            "label": "sephora data",
+            "shortDescription": "blog relatant les derniers travaux de l'equipe data de sephora digital sea",
+            "longDescription": "Blog utilisé en interne par l'entreprise SEPHORA DIGITAL SEA (South-East Asia) relatant les derniers travaux de l'équipe DATA.<br><br> Le blog est un moyen de partager efficacement l'information entre les différentes équipes au sein de l'entreprise et d'archiver ces informations."
+        }
+    },
+    "contact": {
+        "h2": "CONTACTEZ MOI",
+        "form": {
+            "name": "Nom",
+            "email": "Email",
+            "phone": "Numéro de téléphone (optionnel)",
+            "message": "Message",
+            "submit": "Envoyer message"
+        }
+    },
+    "banner": {
+        "successBanner": "LE MESSAGE A BIEN ETE ENVOYE",
+        "failureBanner": "ERREUR LORS DE L'ENVOI DU MESSAGE, MERCI DE CONTACTER DIRECTEMENT alexandre.peccaud@gmail.com"
+    }
+}

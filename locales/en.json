@@ -1,0 +1,87 @@
+{
+    "presentation" : {
+        "h2" : "ABOUT ME",
+        "p": "Hi, I'm Alexandre. <br><br> With a passion for <strong>Web development</strong> for more than four years, I wish to put my skills and knowledge at the service of your projects. I’m specialized in the development of <strong>websites</strong> and <strong>Web applications</strong>. <br><br>Having a solid background in back-end, front-end and marketing, I offer <strong>complete and fully customized solutions</strong> according to your requirements. I help you choose the most suited <strong>digital support</strong> for your company (showcase website, e-commerce, blog, ...) and put in place good practices to improve your <strong>visibility on the net</strong> and your <strong>digital identity</strong>."
+    },
+    "skills": {
+        "h2": "MY SKILLS",
+        "backend": {
+            "description": "I use different Back-end (server side) technologies in order to maximise the performance and security of your website.",
+            "item1": {
+                "label": "Security",
+                "description": "I use strong programming languages and set up good security practices on your website."
+            },
+            "item2": {
+                "label": "Reliability",
+                "description": "I ensure that the different functionalities of your website are reliable in the long run by testing them in different use cases."
+            },
+            "item3": {
+                "label": "Data organization",
+                "description": "I use relational database management systems (MySQL, PostreSQL) in order to store and structure the data of your website."
+            },
+            "item4": {
+                "label": "Speed",
+                "description": "I try to shorten the loading times to a minimum and speed up the execution of the various tasks of your website."
+            }
+        },
+        "frontend": {
+            "description": "I use the latest Front-end (client side) technologies in order to enhance the user experience and refine the interface of your website.",
+            "item1": {
+                "label": "Responsive design",
+                "description": "I ensure that your website is adapted to the modern numerical supports (Computers, tablets, mobile phones, …)."
+            },
+            "item2": {
+                "label": "User experience",
+                "description": "I pay particular attention to user experience by maximizing ergonomics, ease of use and visual appearance of your website."
+            }
+        },
+        "marketing": {
+            "description": "I attach great importance to the marketing aspect of your website in order to improve your image and your visibility on the net.",
+            "item1": {
+                "label": "Search Engine Optimization",
+                "description": "I put in place good SEO (Search Engine Optimization) practices in order to improve the position of your website in the results of different search engines."
+            },
+            "item2": {
+                "label": "Web analytics",
+                "description": "By setting up Google Analytics on your website, I give you access to a tool that provides you with complete reports about the traffic on your website."
+            }
+        }
+    },
+    "work": {
+        "h2": "MY WORK",
+        "item1": {
+            "label": "aero",
+            "shortDescription": "Marketing campaign management tool",
+            "longDescription": "AERO is a marketing campaign management software used by SEPHORA DIGITAL SEA (South-East Asia). <br><br> AERO was first designed to streamline the process of creating marketing campaigns by <ul><li>Standardizing the vocabulary used</li> <li> Helping the different stakeholders to share information </li><li> Archiving all the created campaigns </li></ul><br> In addition, by collecting different \"meta-data\" around these campaigns, AERO provides important feedbacks of their effectiveness (ROI, most efficient channels, etc.). In the long term, it can become a real tool to assist in the creation of marketing campaigns."
+        },
+        "item2": {
+            "label": "SEPHORA",
+            "shortDescription": "christmas gifts recommendation bot",
+            "longDescription": "Autonomous program communicating with a user in order to help him choose a good Christmas gift <br><br> The bot asks a series of questions to the user in order to better know the receiver of the gift and to offer personalized recommendations based on the best-sellers of SEPHORA products <br><br> The user communicates naturally with the bot, as if it communicated with a human being. The bot uses different \"Natural Language Processing\" algorithms in order to interpret the user's messages and extract useful information."
+        },
+        "item3": {
+            "label": "ccookie",
+            "shortDescription": "human voice analysis interface",
+            "longDescription": "Interface able to analyze different characteristics of the human voice (intonation, speech rate, listening rate, etc.) <br><br> The application is used as a digital support during training sessions and improves the commercial skills of the participants."
+        },
+        "item4": {
+            "label": "sephora data",
+            "shortDescription": "blog about the latest work of sephora data team",
+            "longDescription": "Blog used internally by the company SEPHORA DIGITAL SEA (South-East Asia) containing the latest work of the DATA team. <br><br> The blog is a way to effectively share information between different teams within the company and to archive this information."
+        }
+    },
+    "contact": {
+        "h2": "CONTACT ME",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "phone": "Phone number (optional)",
+            "message": "Message",
+            "submit": "Send message"
+        }
+    },
+    "banner": {
+        "successBanner": "MESSAGE SUCCESSFULLY SENT",
+        "failureBanner": "ERROR WHILE SENDING THE MESSAGE, PLEASE CONTACT DIRECTLY alexandre.peccaud@gmail.com"
+    }
+}
