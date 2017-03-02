@@ -1,26 +1,6 @@
 $(function(){
-    /* typed.js - animated text */
-        var mq = window.matchMedia("(min-width: 1px) and (max-width: 576px)");
-        if (!mq.matches) {
-            $("header h2 span").typed({
-                strings: ["I am a Web developer.", "I develop your websites.", "I am a Web designer."],
-                typeSpeed: 100,
-                backSpeed: 50,
-                backDelay: 10000,
-                showCursor: true,
-                cursorChar: "|",
-                loop: true,
-                // call when done callback function
-                callback: function() {},
-                // starting callback function before each string
-                preStringTyped: function() {},
-                //callback for every typed string
-                onStringTyped: function() {},
-                // callback for reset
-                resetCallback: function() {}
-            });
-        }
-    /* //typed.js -- animated text */
+    // typed.js - animated text
+    initTyped(["Je suis un développeur Web.", "Je développe vos sites Web.", "Je suis un Web designer."])
 
 
 
@@ -205,21 +185,48 @@ $(function(){
             });
 
         // Switch language
-        $('.navbar .translate').click(function() {
+        $('.navbar .translate, header .translate').click(function() {
             if ($('.navbar-right li .translate img').attr('alt') === 'English') {
                 i18next.changeLanguage("en", function() {
                     $('.translate').localize();
-                    $('.navbar-right li .translate img').attr('src', 'dist/images/flags/France.png');
-                    $('.navbar-right li .translate img').attr('alt', 'Français');
+                    $('.navbar-right li .translate img, header .translate img').attr('src', 'dist/images/flags/France.png');
+                    $('.navbar-right li .translate img, header .translate img').attr('alt', 'Français');
+                    initTyped(["I am a Web developer.", "I develop your websites.", "I am a Web designer."])
                 });
             }
             else if ($('.navbar-right li .translate img').attr('alt') === 'Français') {
                 i18next.changeLanguage("fr", function() {
                     $('.translate').localize();
-                    $('.navbar-right li .translate img').attr('src', 'dist/images/flags/United-Kingdom.png');
-                    $('.navbar-right li .translate img').attr('alt', 'English');
+                    $('.navbar-right li .translate img, header .translate img').attr('src', 'dist/images/flags/United-Kingdom.png');
+                    $('.navbar-right li .translate img, header .translate img').attr('alt', 'English');
+                    initTyped(["Je suis un développeur Web.", "Je développe vos sites Web.", "Je suis un Web designer."])
                 });
             }
         })
     /* //Translate */
 });
+
+/* typed.js - animated text */
+function initTyped(strings) {
+    var mq = window.matchMedia("(min-width: 1px) and (max-width: 576px)");
+    if (!mq.matches) {
+        $("header h2 span").typed({
+            strings: strings,
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 10000,
+            showCursor: true,
+            cursorChar: "|",
+            loop: true,
+            // call when done callback function
+            callback: function() {},
+            // starting callback function before each string
+            preStringTyped: function() {},
+            //callback for every typed string
+            onStringTyped: function() {},
+            // callback for reset
+            resetCallback: function() {}
+        });
+    }
+}
+/* //typed.js -- animated text */
