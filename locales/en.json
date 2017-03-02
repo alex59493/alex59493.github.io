@@ -1,6 +1,7 @@
 {
     "header": {
-        "h1": "Hi! This is Alexandre"
+        "h1": "Hi! This is Alexandre",
+        "h2": "I am a developer."
     },
     "presentation" : {
         "h2" : "ABOUT ME",

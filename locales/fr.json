@@ -1,6 +1,7 @@
 {
     "header": {
-        "h1": "Bonjour! Je suis Alexandre"
+        "h1": "Bonjour! Je suis Alexandre",
+        "h2": "Je suis un développeur."
     },
     "presentation": {
         "h2": "A PROPOS DE MOI",
