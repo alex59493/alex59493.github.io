@@ -116,8 +116,9 @@ $(function(){
 
     /* Nav bar */
         // On page load, check if the navbar should be displayed
-        if ($(this).scrollTop() > $(window).height()) {
-            $('nav').css('display', 'block');
+        if ($(this).scrollTop() > 10) {
+            $('nav .overlay').css('display', 'block');
+            $('.navbar .navbar-right .scroll').css('display', 'block');
         }
 
         // Show / Hide
@@ -126,21 +127,30 @@ $(function(){
             var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
             $('nav').css('animation-duration', '0.5s');
             // Show Navbar
-            if ($(this).scrollTop() > $(window).height()) {
-                if ($('nav').css('display') === 'none') {
-                    $('nav').css('display', 'block');
-                    $('nav').addClass('animated fadeInDown').one(animationEnd, function() {
-                        $('nav').removeClass('animated fadeInDown');
+            if ($(this).scrollTop() > 50) {
+                if ($('nav .overlay').css('display') === 'none') {
+                    $('nav .overlay').css('display', 'block');
+                    $('nav .overlay').addClass('animated fadeIn').one(animationEnd, function() {
+                        $('nav .overlay').removeClass('animated fadeIn');
+                    });
+
+                    $('.navbar .navbar-right .scroll').css('display', 'block');
+                    $('.navbar .navbar-right .scroll').addClass('animated fadeIn').one(animationEnd, function() {
+                        $('.navbar .navbar-right .scroll').removeClass('animated fadeIn');
                     });
                 }
             }
             // Hide Navbar
             else {
-                if ($('nav').css('display') === 'block') {
-                    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                    $('nav').addClass('animated fadeOutUp').one(animationEnd, function() {
-                        $('nav').removeClass('animated fadeOutUp');
-                        $('nav').css('display', 'none');
+                if ($('nav .overlay').css('display') === 'block') {
+                    $('nav .overlay').addClass('animated fadeOut').one(animationEnd, function() {
+                        $('nav .overlay').removeClass('animated fadeOut');
+                        $('nav .overlay').css('display', 'none');
+                    });
+
+                    $('.navbar .navbar-right .scroll').addClass('animated fadeOut').one(animationEnd, function() {
+                        $('.navbar .navbar-right .scroll').removeClass('animated fadeOut');
+                        $('.navbar .navbar-right .scroll').css('display', 'none');
                     });
                 }
             }
@@ -162,10 +172,10 @@ $(function(){
         });
 
         // Scroll spy
-        $('body').scrollspy({
-            target: '.navbar-fixed-top',
-            offset: 400
-        })
+        // $('body').scrollspy({
+        //     target: '.navbar-fixed-top',
+        //     offset: 400
+        // })
     /* //Nav bar */
 
 

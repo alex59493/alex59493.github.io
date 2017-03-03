@@ -134,44 +134,65 @@
 
 /*-- Navbar --*/
 	.navbar {
-		display: none;
-		padding: 0px 20px;
+		z-index: 999;
 		box-shadow: none !important;
 		-webkit-box-shadow: none !important;
 		background: none !important;
-		background-color: #fff !important;
-		min-height: 60px;
-		padding-top: 5px;
-		border-bottom: 1px solid rgb(231, 231, 231);
+		background-color: rgba(0, 0, 0, 0) !important;
+		padding: 0 20px;
+		border: 0;
+		font-family: 'Poppins', sans-serif;
 	}
-	.navbar-brand {
-		font-size: 22px;
+
+	.navbar .overlay {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: black;
 	}
-	.navbar-right li {
-		font-size: 20px;
+
+	.navbar .navbar-brand {
+		position: relative;
+		font-size: 15px;
+		letter-spacing: 4px;
+		color: #FFF;
+		text-shadow: none;
 	}
-	.navbar-right li .translate {
-		padding: 0 15px;
+
+	.navbar .navbar-right li a {
+		color: #fff;
+		text-shadow: none;
 	}
-	.navbar-right li .translate img {
-		width: 51px;
-		height: 51px;
-	}
-	.navbar-right li a {
+
+	/* Flag */
+	.navbar .navbar-right li:last-child a {
 		cursor: pointer;
+		padding: 0;
+		padding-left: 15px;
 	}
-	.navbar-right li .fa {
+
+	.navbar .navbar-right li > a:hover, .navbar .navbar-brand:hover {
+		color: #fff;
+	}
+
+	.navbar .navbar-right li > a:focus, .navbar .navbar-brand:focus {
+		color: #fff;
+	}
+
+	.navbar .navbar-right li .fa {
 		margin-right: 10px;
 	}
-	.navbar-right .active a {
-		box-shadow: none !important;
-		-webkit-box-shadow: none !important;
-		background: none !important;
-		background-color: rgb(231, 231, 231) !important;
-		border-radius: 1px;
+
+	.navbar .navbar-right img {
+		width: 50px;
+		height: 50px;
 	}
-	.navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:hover {
-		color: #b61924;
+
+	.navbar .navbar-right .scroll {
+		display: none;
 	}
 /*-- //Navbar --
 
@@ -229,39 +250,6 @@
 		letter-spacing: 5px;
 		font-weight: 800;
 		color: #FFF;
-	}
-
-	header .topNav {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 60px;
-		padding: 0 20px;
-	}
-
-	header .topNavLeft {
-		display: inline-block;
-		font-family: 'Poppins', sans-serif;
-		font-size: 15px;
-		letter-spacing: 4px;
-		line-height: 60px;
-		color: #FFF;
-	}
-
-	header .topNavRight {
-		display: inline-block;
-		line-height: 60px;
-		float: right;
-	}
-
-	header .topNavRight a {
-		cursor: pointer;
-	}
-
-	header .topNavRight img {
-		width: 50px;
-		height: 50px;
 	}
 
 	/*-- Navigation --*/
