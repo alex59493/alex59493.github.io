@@ -133,11 +133,6 @@ $(function(){
                     $('nav .overlay').addClass('animated fadeIn').one(animationEnd, function() {
                         $('nav .overlay').removeClass('animated fadeIn');
                     });
-
-                    $('.navbar .navbar-right .scroll').css('display', 'block');
-                    $('.navbar .navbar-right .scroll').addClass('animated fadeIn').one(animationEnd, function() {
-                        $('.navbar .navbar-right .scroll').removeClass('animated fadeIn');
-                    });
                 }
             }
             // Hide Navbar
@@ -146,11 +141,6 @@ $(function(){
                     $('nav .overlay').addClass('animated fadeOut').one(animationEnd, function() {
                         $('nav .overlay').removeClass('animated fadeOut');
                         $('nav .overlay').css('display', 'none');
-                    });
-
-                    $('.navbar .navbar-right .scroll').addClass('animated fadeOut').one(animationEnd, function() {
-                        $('.navbar .navbar-right .scroll').removeClass('animated fadeOut');
-                        $('.navbar .navbar-right .scroll').css('display', 'none');
                     });
                 }
             }
@@ -172,10 +162,10 @@ $(function(){
         });
 
         // Scroll spy
-        // $('body').scrollspy({
-        //     target: '.navbar-fixed-top',
-        //     offset: 400
-        // })
+        $('body').scrollspy({
+            target: '.navbar-fixed-top',
+            offset: 200
+        })
     /* //Nav bar */
 
 
@@ -195,20 +185,20 @@ $(function(){
             });
 
         // Switch language
-        $('.navbar .translate, header .translate').click(function() {
-            if ($('.navbar-right li .translate img').attr('alt') === 'English') {
+        $('.navbar .translate-flag').click(function() {
+            if ($('.navbar-right li .translate-flag img').attr('alt') === 'English') {
                 i18next.changeLanguage("en", function() {
                     $('.translate').localize();
-                    $('.navbar-right li .translate img, header .translate img').attr('src', 'dist/images/flags/France.png');
-                    $('.navbar-right li .translate img, header .translate img').attr('alt', 'Français');
+                    $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/France.png');
+                    $('.navbar-right li .translate-flag img, header .translate-flag img').attr('alt', 'Français');
                     initTyped(["I am a Web developer.", "I develop your websites.", "I am a Web designer."])
                 });
             }
-            else if ($('.navbar-right li .translate img').attr('alt') === 'Français') {
+            else if ($('.navbar-right li .translate-flag img').attr('alt') === 'Français') {
                 i18next.changeLanguage("fr", function() {
                     $('.translate').localize();
-                    $('.navbar-right li .translate img, header .translate img').attr('src', 'dist/images/flags/United-Kingdom.png');
-                    $('.navbar-right li .translate img, header .translate img').attr('alt', 'English');
+                    $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/United-Kingdom.png');
+                    $('.navbar-right li .translate-flag img, header .translate-flag img').attr('alt', 'English');
                     initTyped(["Je suis un développeur Web.", "Je développe vos sites Web.", "Je suis un Web designer."])
                 });
             }

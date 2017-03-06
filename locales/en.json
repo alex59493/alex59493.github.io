@@ -1,7 +1,14 @@
 {
+    "navigation": {
+        "item1": "ABOUT ME",
+        "item2": "SKILLS",
+        "item3": "WORK",
+        "item4": "CONTACT"
+    },
     "header": {
         "h1": "Hi! This is Alexandre",
-        "h2": "I am a developer."
+        "h2": "I am a developer.",
+        "button": "CONTACT ME"
     },
     "presentation" : {
         "h2" : "ABOUT ME",

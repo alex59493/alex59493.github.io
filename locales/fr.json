@@ -1,7 +1,14 @@
 {
+    "navigation": {
+        "item1": "À PROPOS",
+        "item2": "COMPÉTENCES",
+        "item3": "RÉALISATIONS",
+        "item4": "CONTACT"
+    },
     "header": {
-        "h1": "Bonjour! Je m'appelle Alexandre",
-        "h2": "Je suis un développeur."
+        "h1": "Bonjour! Je suis Alexandre",
+        "h2": "Je suis un développeur.",
+        "button": "CONTACTEZ MOI"
     },
     "presentation": {
         "h2": "A PROPOS DE MOI",
