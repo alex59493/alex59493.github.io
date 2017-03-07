@@ -11,11 +11,11 @@
         "button": "CONTACT ME"
     },
     "presentation" : {
-        "h2" : "ABOUT ME",
+        "h2" : "About me.",
         "p": "Hi, I'm Alexandre. <br><br> With a passion for <strong>Web development</strong> for more than four years, I wish to put my skills and knowledge at the service of your projects. I’m specialized in the development of <strong>websites</strong> and <strong>Web applications</strong>. <br><br>Having a solid background in back-end, front-end and marketing, I offer <strong>complete and fully customized solutions</strong> according to your requirements. I help you choose the most suited <strong>digital support</strong> for your company (showcase website, e-commerce, blog, ...) and put in place good practices to improve your <strong>visibility on the net</strong> and your <strong>digital identity</strong>."
     },
     "skills": {
-        "h2": "MY SKILLS",
+        "h2": "My skills.",
         "backend": {
             "description": "I use different Back-end (server side) technologies in order to maximise the performance and security of your website.",
             "item1": {
@@ -59,7 +59,7 @@
         }
     },
     "work": {
-        "h2": "MY WORK",
+        "h2": "My work.",
         "item1": {
             "label": "aero",
             "shortDescription": "Marketing campaign management tool",
@@ -82,7 +82,7 @@
         }
     },
     "contact": {
-        "h2": "CONTACT ME",
+        "h2": "Contact me.",
         "form": {
             "name": "Name",
             "email": "Email",

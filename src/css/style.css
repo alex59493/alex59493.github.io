@@ -674,6 +674,7 @@
 /*-- Contact Section --*/
 
 	#contact {
+		position: relative;
 		margin-top: 50px;
 		padding: 50px 0;
 		background-image: url("../images/contact.jpg");
@@ -687,7 +688,18 @@
 		color: #000;
 	}
 
+	#contact .overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: black;
+		opacity: 0.2;
+	}
+
 	#contact h2 {
+		position: relative;
 		font-size: 50px;
 		font-weight: 500;
 		margin-bottom: 50px;
@@ -734,6 +746,7 @@
 	}
 
 	#contact .submit {
+		position: relative;
 		padding: 13px 30px;
 		border: 1px solid #d5d5d5;
 		font-size: 16px;
@@ -893,3 +906,40 @@
 	}
 }
 /*-- //Phone --*/
+
+
+
+.interSection {
+	position: relative;
+	height: 400px;
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	background-color: black;
+	background-image: url("../images/header-background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+.interSection.one {
+	background-image: url("../images/entrepreneur.jpg");
+}
+
+.interSection.two {
+	background-image: url("../images/computational.jpg");
+}
+
+.interSection .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	opacity: 0.2;
+}

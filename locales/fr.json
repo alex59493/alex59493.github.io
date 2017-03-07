@@ -11,11 +11,11 @@
         "button": "CONTACTEZ MOI"
     },
     "presentation": {
-        "h2": "A PROPOS DE MOI",
+        "h2": "À propos de moi.",
         "p": "Bonjour, je suis Alexandre. <br><br> Passionné par le <strong>développement Web</strong> depuis plus de quatre ans, j’ai créé mon auto-entreprise afin de mettre mes compétences et mes connaissances au service de vos projets. Je suis spécialisé dans le <strong>développement de sites internet</strong> et d’<strong>applications Web</strong>. <br><br> Ayant de solides compétences en programmation back-end, front-end et marketing, je vous propose des <strong>solutions complètes et entièrement personnalisées</strong> selon vos demandes. Je vous aide à choisir le <strong>support digital</strong> le plus adapté à votre entreprise (site vitrine, e-commerce, blog, ...) et mets en place les bonnes pratiques pour améliorer votre <strong>visibilité sur le net</strong> et votre <strong>identité digitale</strong>."
     },
     "skills": {
-        "h2": "MES COMPETENCES",
+        "h2": "Mes compétences.",
         "backend": {
             "description": "J’utilise différentes technologies Back-end (côté serveur) pour maximiser les performances et la sécurité de vos sites Internet.",
             "item1": {
@@ -59,7 +59,7 @@
         }
     },
     "work": {
-        "h2": "MES REALISATIONS",
+        "h2": "Mes réalisations.",
         "item1": {
             "label": "aero",
             "shortDescription": "outil de management de campagnes marketing",
@@ -82,7 +82,7 @@
         }
     },
     "contact": {
-        "h2": "CONTACTEZ MOI",
+        "h2": "Contactez moi.",
         "form": {
             "name": "Nom",
             "email": "Email",
