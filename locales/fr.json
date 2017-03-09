@@ -61,7 +61,7 @@
     "work": {
         "h2": "Mes réalisations.",
         "item1": {
-            "label": "aero",
+            "label": "AERO",
             "shortDescription": "outil de management de campagnes marketing",
             "longDescription": "AERO est un progiciel de gestion de campagnes marketing utilisé au sein de l'entreprise SEPHORA DIGITAL SEA (South-East Asia).<br><br> AERO a d'abord été conçu afin de rationaliser le processus de création de campagnes marketing en : <ul><li>Standardisant le vocabulaire utilisé</li><li>Facilitant l'échange d'information entre les différentes parties prenantes</li><li>Archivant toutes les campagnes créées</li></ul><br>De plus, en collectant différentes \"meta-data\" autour de ces campagnes, AERO fournit d'importantes données sur l'efficacité de ces campagnes (Retour sur investissement, channels les plus efficaces, etc). Il pourra, sur le long terme, devenir un réel outil d'assistance à la création de campagnes marketing."
         },
@@ -71,12 +71,12 @@
             "longDescription": "Programme autonome communiquant avec un utilisateur afin de l'aider à choisir un bon cadeau de Noel.<br><br> Le bot pose une série de questions à l'utilisateur afin de mieux connaitre le destinataire du cadeau pour lui proposer des recommandations personalisées basées sur les meilleurs ventes des produits SEPHORA.<br><br> L'utilisateur communique naturellement avec le bot, comme s'il communiquait avec un être humain. Le bot, lui, utilise différents algorithmes de \"Natural Language Processing\" afin d'interpréter les messages de l'utilisateur et d'en extraire des informations utiles."
         },
         "item3": {
-            "label": "ccookie",
+            "label": "CCOOKIE",
             "shortDescription": "interface d'analyse de la voix humaine",
             "longDescription": "Interface permettant d’analyser différentes caractéristiques de la voix humaine (intonation, débit de parole, taux d'écoute, etc).<br><br> L’application sert de support de formation et permet d’améliorer les compétences commerciales des participants."
         },
         "item4": {
-            "label": "sephora data",
+            "label": "SEPHORA DATA",
             "shortDescription": "blog relatant les derniers travaux de l'equipe data de sephora digital sea",
             "longDescription": "Blog utilisé en interne par l'entreprise SEPHORA DIGITAL SEA (South-East Asia) relatant les derniers travaux de l'équipe DATA.<br><br> Le blog est un moyen de partager efficacement l'information entre les différentes équipes au sein de l'entreprise et d'archiver ces informations."
         }

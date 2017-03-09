@@ -61,7 +61,7 @@
     "work": {
         "h2": "My work.",
         "item1": {
-            "label": "aero",
+            "label": "AERO",
             "shortDescription": "Marketing campaign management tool",
             "longDescription": "AERO is a marketing campaign management software used by SEPHORA DIGITAL SEA (South-East Asia). <br><br> AERO was first designed to streamline the process of creating marketing campaigns by <ul><li>Standardizing the vocabulary used</li> <li> Helping the different stakeholders to share information </li><li> Archiving all the created campaigns </li></ul><br> In addition, by collecting different \"meta-data\" around these campaigns, AERO provides important feedbacks of their effectiveness (ROI, most efficient channels, etc.). In the long term, it can become a real tool to assist in the creation of marketing campaigns."
         },
@@ -71,12 +71,12 @@
             "longDescription": "Autonomous program communicating with a user in order to help him choose a good Christmas gift <br><br> The bot asks a series of questions to the user in order to better know the receiver of the gift and to offer personalized recommendations based on the best-sellers of SEPHORA products <br><br> The user communicates naturally with the bot, as if it communicated with a human being. The bot uses different \"Natural Language Processing\" algorithms in order to interpret the user's messages and extract useful information."
         },
         "item3": {
-            "label": "ccookie",
+            "label": "CCOOKIE",
             "shortDescription": "human voice analysis interface",
             "longDescription": "Interface able to analyze different characteristics of the human voice (intonation, speech rate, listening rate, etc.) <br><br> The application is used as a digital support during training sessions and improves the commercial skills of the participants."
         },
         "item4": {
-            "label": "sephora data",
+            "label": "SEPHORA DATA",
             "shortDescription": "blog about the latest work of sephora data team",
             "longDescription": "Blog used internally by the company SEPHORA DIGITAL SEA (South-East Asia) containing the latest work of the DATA team. <br><br> The blog is a way to effectively share information between different teams within the company and to archive this information."
         }
