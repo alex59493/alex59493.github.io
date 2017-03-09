@@ -171,18 +171,39 @@ $(function(){
 
 
     /* Translate (i18next) */
-        i18next
-            .use(i18nextXHRBackend)
-            .init({
-                lng: 'fr',
-                fallbackLng: 'fr',
-                backend: {
-                    loadPath: '/locales/{{lng}}.json'
-                }
-            }, function(err, t) {
-                jqueryI18next.init(i18next, $);
-                $('.translate').localize();
-            });
+        var userLang = navigator.language || navigator.userLanguage;  // Get user language
+
+        if (userLang === "fr") {
+            i18next
+                .use(i18nextXHRBackend)
+                .init({
+                    lng: 'fr',
+                    fallbackLng: 'en',
+                    backend: {
+                        loadPath: '/locales/{{lng}}.json'
+                    }
+                }, function(err, t) {
+                    jqueryI18next.init(i18next, $);
+                    $('.translate').localize();
+                });
+        }
+        else {
+            i18next
+                .use(i18nextXHRBackend)
+                .init({
+                    lng: 'en',
+                    fallbackLng: 'en',
+                    backend: {
+                        loadPath: '/locales/{{lng}}.json'
+                    }
+                }, function(err, t) {
+                    jqueryI18next.init(i18next, $);
+                    $('.translate').localize();
+                    $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/France.png');
+                    $('.navbar-right li .translate-flag img, header .translate-flag img').attr('alt', 'Français');
+                    initTyped(["I am a Web developer.", "I develop your websites.", "I am a Web designer."])
+                });
+        }
 
         // Switch language
         $('.navbar .translate-flag').click(function() {
