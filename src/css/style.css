@@ -334,6 +334,7 @@
 
 	.button:hover {
 		font-size: 20px;
+		padding: 22px 80px;
 		color: #fff !important;
 	}
 
