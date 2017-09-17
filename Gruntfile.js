@@ -1,6 +1,6 @@
 module.exports = function (grunt) {
-    // Project configuration.
     grunt.initConfig({
+        // Merge and compress javascript code into dist/js/main.min.js
         uglify: {
             dist: {
                 files: {
@@ -8,19 +8,7 @@ module.exports = function (grunt) {
                 }
             }
         },
-        // uncss: {
-        //     options : {
-        //         ignore : [
-        //             '.animated', '.fadeInLeft', '.fadeInRight', '.fadeIn',
-        //             /\.modal[.\-a-zA-Z0-9]*/, '.open'
-        //         ]
-        //     },
-        //     dist: {
-        //         files: {
-        //             'dist/css/styles.min.css': ['src/index.html']
-        //         }
-        //     }
-        // },
+        // Merge and compress css code into dist/css/styles.min.css
         cssmin: {
             dist: {
                 files: {
@@ -28,6 +16,7 @@ module.exports = function (grunt) {
                 }
             }
         },
+        // Merge script and css calls together to make only 2 calls (dist/js/main.min.js) and (dist/css/styles.min.css)
         processhtml: {
             dist: {
                 files: {
@@ -35,6 +24,7 @@ module.exports = function (grunt) {
                 }
             }
         },
+        // Minify html code
         htmlmin: {
             dist: {
                 options: {
@@ -53,12 +43,10 @@ module.exports = function (grunt) {
             },
             styles: {
                 files: 'src/css/*.css',
-                // tasks: ['uncss', 'cssmin']
                 tasks: ['cssmin']
             },
             index: {
                 files: 'src/index.html',
-                // tasks: ['uncss', 'cssmin', 'processhtml', 'htmlmin']
                 tasks: ['cssmin', 'processhtml', 'htmlmin']
             }
         }
@@ -66,13 +54,12 @@ module.exports = function (grunt) {
 
     // Load plugins
     grunt.loadNpmTasks('grunt-contrib-uglify')
-    // grunt.loadNpmTasks('grunt-uncss')
     grunt.loadNpmTasks('grunt-contrib-cssmin')
     grunt.loadNpmTasks('grunt-processhtml')
     grunt.loadNpmTasks('grunt-contrib-htmlmin')
     grunt.loadNpmTasks('grunt-contrib-watch')
 
     // Define tasks
-    // grunt.registerTask('default', ['uglify', 'uncss', 'cssmin', 'processhtml', 'htmlmin'])
+    // Default task : grunt command
     grunt.registerTask('default', ['uglify', 'cssmin', 'processhtml', 'htmlmin'])
 }
