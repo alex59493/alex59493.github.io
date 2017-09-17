@@ -260,15 +260,29 @@
 		height: 100vh;
 		width: 100vw;
 		background-color: black;
-		background-image: url("../images/header-background.jpeg");
+		/* background-image: url("../images/header-background.jpeg");
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
-		-o-background-size: cover;
+		-o-background-size: cover; */
 		color: #fff;
+	}
+
+	header .parallax-1 {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../images/header-background.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
 	}
 
 	header .overlay {
@@ -368,6 +382,7 @@
 /*-- Presentation Section --*/
 
 	#presentation {
+		margin-top: 50px;
 		padding: 50px 0;
 	}
 
