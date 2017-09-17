@@ -43,6 +43,8 @@
     <!-- /build -->
     <!-- //Custom-Stylesheet-Links -->
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <!-- Google Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -116,39 +118,88 @@
 
 
 
-    <!-- Presentation -->
-    <section id="presentation">
+    <!-- Offer -->
+    <section id="offer">
+        <h2 class="translate" data-i18n="presentation.h2"> Ce que je vous propose. </h2>
 
-        <h2 class="translate" data-i18n="presentation.h2"> À propos de moi. </h2>
+        <h3 class="translate" data-i18n="presentation.h3"> Je vous propose des solutions entièrement personnalisées afin d'atteindre vos objectifs commerciaux. </h3>
 
-        <div class="container">
-            <div class="col-md-10 col-md-offset-1">
-                <!--Photo--> <img src="dist/images/photo.png" alt="Alexandre PECCAUD" class="photo">
-
-                <p class="translate" data-i18n="[html]presentation.p">
-                    Bonjour, je suis Alexandre.
-                    <br><br>
-                    Passionné par le <strong>développement Web</strong> depuis plus de quatre ans, j’ai créé mon auto-entreprise afin de mettre mes compétences et mes connaissances au service de vos projets. Je suis spécialisé dans le <strong>développement de sites internet</strong> et d’<strong>applications Web</strong>.
-                    <br><br>
-                    Ayant de solides compétences en programmation back-end, front-end et marketing, je vous propose des <strong>solutions complètes et entièrement personnalisées</strong> selon vos demandes. Je vous aide à choisir le <strong>support digital</strong> le plus adapté à votre entreprise (site vitrine, e-commerce, blog, ...) et mets en place les bonnes pratiques pour améliorer votre <strong>visibilité sur le net</strong> et votre <strong>identité digitale</strong>.
-                </p>
+        <div class="container my-table">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="offer-icon"><i class="material-icons">desktop_mac</i></div>
+                    <div class="offer-label">Sites Internet</div>
+                    <div class="offer-description">Créez une identité digitale pour votre marque et menez à bien vos campagnes.</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="offer-icon"><i class="material-icons">phone_iphone</i></div>
+                    <div class="offer-label">Mobile</div>
+                    <div class="offer-description">Exploitez le potentiel incroyable des petits écrans. Créer des expériences digitales uniques sur des plateformes modernes.</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="offer-icon"><i class="material-icons">shopping_cart</i></div>
+                    <div class="offer-label">eCommerce</div>
+                    <div class="offer-description">Vendez en ligne et fidélisez vos clients en proposant des expériences ultra personnalisées.</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="offer-icon"><i class="material-icons">timeline</i></div>
+                    <div class="offer-label">Données</div>
+                    <div class="offer-description">Collectez, organisez et exploitez l'incroyable quantité d'information dont vous avez accès.</div>
+                </div>
             </div>
         </div>
-
     </section>
-    <!-- //Presentation -->
+    <!-- //Offer -->
 
 
 
     <!-- Skills -->
-    <section id="skills">
 
+    <section id="skills">
+        <h1>Ce que je vous garantie.</h1>
+
+        <h2 class="translate" data-i18n="presentation.h2"> Chaque projet sera traité avec une attention particulière aux points suivants : </h2>
+
+        <div class="container my-table">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-1">
+                    <div class="skills-icon"><i class="material-icons">security</i></div>
+                    <div class="skills-label">Sécurité</div>
+                    <div class="skills-description">Vos données ainsi que celles de vos utilisateurs seront protégées.</div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="skills-icon"><i class="material-icons">check_circle</i></div>
+                    <div class="skills-label">Fiabilité</div>
+                    <div class="skills-description">Les fonctionnalitées développées seront testées dans différents cas d'utilisation afin de garantir leur fiabilité sur le long terme.</div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="skills-icon"><i class="material-icons">directions_run</i></div>
+                    <div class="skills-label">Rapidité</div>
+                    <div class="skills-description">Les temps de chargement seront écourtés au maximum.</div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="skills-icon"><i class="material-icons">phonelink</i></div>
+                    <div class="skills-label">Responsive design</div>
+                    <div class="skills-description">Les sites internet seront adaptés aux différents supports numériques modernes (Ordinateurs, tablettes, mobiles, …).</div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="skills-icon"><i class="material-icons">person</i></div>
+                    <div class="skills-label">Expérience utilisateur</div>
+                    <div class="skills-description">L’ergonomie, la facilité d’utilisation et l’aspect visuel de votre produit seront maximisés.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--
+    <section id="skills">
+            
         <div class="title">
+            <div class="parallax parallax-2"></div>
             <div class="overlay"></div>
             <h2 class="translate" data-i18n="skills.h2"> Mes compétences. </h2>
         </div>
 
-        <!-- Back-End -->
         <div class="container">
 
             <h3> BACK-END </h3>
@@ -158,7 +209,6 @@
 
             <div class="container-fluid">
                 <div class="row">
-                    <!-- item1 -->
                     <div class="col-md-6">
                         <div class="item item1">
                             <div class="icon">
@@ -173,7 +223,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- item2 -->
                     <div class="col-md-6">
                         <div class="item item2">
                             <div class="icon">
@@ -191,7 +240,6 @@
                 </div>
 
                 <div class="row">
-                    <!-- item3 -->
                     <div class="col-md-6">
                         <div class="item item3">
                             <div class="icon">
@@ -206,7 +254,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- item4 -->
                     <div class="col-md-6">
                         <div class="item item4">
                             <div class="icon">
@@ -225,10 +272,8 @@
             </div>
 
         </div>
-        <!-- //Back-End -->
 
 
-        <!-- Front-End -->
         <div class="container">
 
             <h3> FRONT-END </h3>
@@ -238,7 +283,6 @@
 
             <div class="container-fluid">
                 <div class="row">
-                    <!-- item5 -->
                     <div class="col-md-6">
                         <div class="item item5">
                             <div class="icon">
@@ -253,7 +297,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- item6 -->
                     <div class="col-md-6">
                         <div class="item item6">
                             <div class="icon">
@@ -272,10 +315,8 @@
             </div>
 
         </div>
-        <!-- //Front-End -->
 
 
-        <!-- Marketing -->
         <div class="container">
 
             <h3> MARKETING </h3>
@@ -285,7 +326,6 @@
 
             <div class="container-fluid">
                 <div class="row">
-                    <!-- item7 -->
                     <div class="col-md-6">
                         <div class="item item7">
                             <div class="icon">
@@ -300,7 +340,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- item8 -->
                     <div class="col-md-6">
                         <div class="item item8">
                             <div class="icon">
@@ -319,10 +358,32 @@
             </div>
 
         </div>
-        <!-- //Marketing -->
 
     </section>
+-->
     <!-- //Skills -->
+
+
+
+    <!-- Presentation -->
+    <section id="presentation">
+
+        <h2 class="translate" data-i18n="presentation.h2"> À propos de moi. </h2>
+
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <img src="dist/images/photo.png" alt="Alexandre PECCAUD" class="photo">
+
+                <p class="translate" data-i18n="[html]presentation.p">
+                    Passionné par le <strong>développement Web</strong> depuis plus de cinq ans, j’ai créé mon auto-entreprise afin de mettre mes compétences et mes connaissances au service de vos projets. Je suis spécialisé dans le <strong>développement de sites internet</strong> et d’<strong>applications Web</strong>.
+                    <br><br>
+                    Ayant de solides compétences en programmation back-end, front-end et marketing, je vous propose des <strong>solutions complètes et entièrement personnalisées</strong> selon vos demandes. Je vous aide à choisir le <strong>support digital</strong> le plus adapté à votre entreprise (site vitrine, e-commerce, blog, ...) et mets en place les bonnes pratiques pour améliorer votre <strong>visibilité sur le net</strong> et votre <strong>identité digitale</strong>.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <!-- //Presentation -->
 
 
 
