@@ -215,6 +215,9 @@
 		width: 40px;
 		height: 40px;
 	}
+	.navbar .dropdown-menu {
+		background-color: black;
+	}
 
 	/*-- Collapsed menu --*/
 	.navbar button {
@@ -371,6 +374,7 @@
 
 
 /*-- Offer Section --*/
+	
 	#offer {
 		margin-top: 50px;
 		padding: 75px 0;
@@ -412,6 +416,7 @@
 		padding-top: 10px;
 		font-size: 16px;
 	}
+
 /*-- //Offer Section --*/
 
 
@@ -498,45 +503,47 @@
 
 
 /*-- Recommendations Section --*/
-#recommendations .title {
-	position: relative;
-	height: 400px;
-	width: 100%;
-	margin: 50px 0;
-}
 
-#recommendations .title .parallax-recommendations {
-	position: absolute;
-	top: 0; bottom: 0; left: 0; right: 0;
-	background-image: url("../images/entrepreneur.jpg");
-	background-position: center;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-}
+	#recommendations .title {
+		position: relative;
+		height: 400px;
+		width: 100%;
+		margin: 50px 0;
+	}
 
-#recommendations .title .overlay {
-	position: absolute;
-	top: 0; bottom: 0; left: 0; right: 0;
-	background-color: black;
-	opacity: 0.6;
-}
+	#recommendations .title .parallax-recommendations {
+		position: absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+		background-image: url("../images/entrepreneur.jpg");
+		background-position: center;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	}
 
-#recommendations .title .content {
-	position: absolute;
-	left: 40px; right: 40px;
-	top: 50%;
-	transform: translateY(-50%);
-	text-align: center;
-	font-size: 22px;
-	color: #fff;
-	font-style: italic;
-}
+	#recommendations .title .overlay {
+		position: absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+		background-color: black;
+		opacity: 0.6;
+	}
 
-#recommendations .title .content-author {
-	line-height: 60px;
-}
+	#recommendations .title .content {
+		position: absolute;
+		left: 40px; right: 40px;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: center;
+		font-size: 22px;
+		color: #fff;
+		font-style: italic;
+	}
+
+	#recommendations .title .content-author {
+		line-height: 60px;
+	}
+
 /*-- //Recommendations Section --*/
 
 
@@ -833,6 +840,7 @@
 
 
 /*-- Banner --*/
+
 	.banner {
 		display: none;
 		position: fixed;
@@ -846,6 +854,7 @@
 		color: #D84315;
 		font-weight: 500;
 	}
+
 /*-- //Banner --*/
 
 
