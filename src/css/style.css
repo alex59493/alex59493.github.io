@@ -218,6 +218,9 @@
 	.navbar .dropdown-menu {
 		background-color: black;
 	}
+	.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background: transparent;
+  }
 
 	/*-- Collapsed menu --*/
 	.navbar button {
