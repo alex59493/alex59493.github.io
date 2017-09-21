@@ -348,22 +348,26 @@
 		color: #fff !important;
 	}
 
-	@media screen and (min-width: 576px) and (max-width: 992px) {
-		header .header-text h2 {
-			font-size: 20px;
-		}
-	}
-
-	@media screen and (min-width: 1px) and (max-width: 576px) {
+	@media screen and (min-width: 1px) and (max-width: 768px) {
 		header {
+			background-image: url("../images/header-background-compressed.jpeg");
+			background-position: center;
 			background-attachment: scroll;
+			background-repeat: no-repeat;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+		}
+		header .parallax-1 {
+			display: none;
 		}
 		header .header-text h1 {
 			font-size: 12px;
 			letter-spacing: 3px;
 		}
 		header .header-text h2 {
-			font-size: 14px;
+			font-size: 16px;
 			letter-spacing: 3px;
 		}
 		header .header-text .button-container .button {
@@ -380,7 +384,7 @@
 	
 	#offer {
 		margin-top: 50px;
-		padding: 75px 0;
+		padding: 75px 10px;
 	}
 
 	#offer h1 {
@@ -420,6 +424,28 @@
 		font-size: 16px;
 	}
 
+	@media screen and (min-width: 1px) and (max-width: 768px) {
+		#offer {
+			padding: 25px 0;
+		}
+
+		#offer h1 {
+			font-size: 24px;
+			letter-spacing: 3px;
+		}
+		
+		#offer h2 {
+			font-size: 16px;
+			letter-spacing: 1px;
+			line-height: 22px;
+			margin-bottom: 50px;
+		}
+
+		#offer .row > div {
+			margin-bottom: 50px;
+		}
+	}
+
 /*-- //Offer Section --*/
 
 
@@ -430,7 +456,7 @@
 		margin: 50px 0;
 		background-color: #272D4E;
 		background-image: url("../images/exagon-pattern.png");
-		padding: 75px 0;
+		padding: 75px 10px;
 		color: white;
 	}
 
@@ -467,6 +493,28 @@
 		font-size: 14px;
 	}
 
+	@media screen and (min-width: 1px) and (max-width: 768px) {
+		#skills {
+			margin: 25px 0;
+		}
+
+		#skills h1 {
+			font-size: 24px;
+			letter-spacing: 3px;
+		}
+		
+		#skills h2 {
+			font-size: 16px;
+			letter-spacing: 1px;
+			line-height: 22px;
+			margin-bottom: 50px;
+		}
+
+		#skills .row > div {
+			margin-bottom: 50px;
+		}
+	}
+
 /*-- //Skills Section --*/
 
 
@@ -493,13 +541,16 @@
 		font-weight: bold;
 	}
 
-	/* #presentation .photo {
-		float: right;
-		width: 280px;
-		margin-left: 30px;
-		margin-right: 15px;
-		margin-bottom: 30px;
-	} */
+	@media screen and (min-width: 1px) and (max-width: 768px) {
+		#presentation {
+			margin: 25px 0;
+		}
+
+		#presentation h1 {
+			font-size: 24px;
+			letter-spacing: 3px;
+		}
+	}
 
 /*-- //Presentation Section --*/
 
@@ -509,9 +560,9 @@
 
 	#recommendations .title {
 		position: relative;
-		height: 400px;
 		width: 100%;
 		margin: 50px 0;
+		padding: 75px 100px;
 	}
 
 	#recommendations .title .parallax-recommendations {
@@ -533,10 +584,7 @@
 	}
 
 	#recommendations .title .content {
-		position: absolute;
-		left: 40px; right: 40px;
-		top: 50%;
-		transform: translateY(-50%);
+		position: relative;
 		text-align: center;
 		font-size: 22px;
 		color: #fff;
@@ -544,7 +592,31 @@
 	}
 
 	#recommendations .title .content-author {
-		line-height: 60px;
+		margin-top: 50px;
+	}
+
+	@media screen and (min-width: 1px) and (max-width: 768px) {
+		#recommendations {
+			background-image: url("../images/entrepreneur.jpg");
+			background-position: center;
+			background-attachment: scroll;
+			background-repeat: no-repeat;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+		}
+		#recommendations .title {
+			padding: 50px 10px;
+		}
+
+		#recommendations .title .parallax-recommendations {
+			display: none;
+		}
+
+		#recommendations .title .content {
+			font-size: 16px;
+		}
 	}
 
 /*-- //Recommendations Section --*/
@@ -705,6 +777,34 @@
 		float: none;
 	}
 
+	@media screen and (min-width: 1px) and (max-width: 768px) {
+		#work h1 {
+			font-size: 24px;
+			letter-spacing: 3px;
+		}
+
+		#work .container {
+			padding: 0;
+		}
+
+		#work .row > div {
+			margin-bottom: 50px;
+		}
+
+		#work .row img {
+			height: 100%;
+		}
+
+		#work .container .row-space {
+			margin: 0;
+		}
+
+		#work .modalWork .modal-body img {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+
 /*-- //Work Section --*/
 
 
@@ -810,6 +910,17 @@
 		background-color: #607d8b;
 	}
 
+	@media screen and (min-width: 1px) and (max-width: 768px) {
+		#contact {
+			margin-top: 0;
+		}
+
+		#contact h1 {
+			font-size: 24px;
+			letter-spacing: 3px;
+		}
+	}
+
 /*-- //Contact Section --*/
 
 
@@ -891,22 +1002,42 @@
 
 
 
-/*-- Phone --*/
-@media screen and (min-width: 1px) and (max-width: 576px)
-{
-	section h2 {
-		font-size: 30px !important;
+/*-- Navbar : Activate collapse on sm size: --*/
+	@media (max-width: 991px) {
+		.navbar-header {
+				float: none;
+		}
+		.navbar-toggle {
+				display: block;
+		}
+		.navbar-collapse {
+				border-top: 1px solid transparent;
+				box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+		}
+		.navbar-collapse.collapse {
+				display: none!important;
+		}
+		.navbar-nav {
+				float: none!important;
+				margin: 7.5px -15px;
+		}
+		.navbar-nav>li {
+				float: none;
+		}
+		.navbar-nav>li>a {
+				padding-top: 10px;
+				padding-bottom: 10px;
+		}
+		.navbar-text {
+				float: none;
+				margin: 15px 0;
+		}
+		/* since 3.1.0 */
+		.navbar-collapse.collapse.in { 
+				display: block!important;
+		}
+		.collapsing {
+				overflow: hidden!important;
+		}
 	}
-	section h3 {
-		font-size: 20px !important;
-	}
-
-	#presentation .photo {
-		width: 100%;
-	}
-
-	#contact, #skills .title, #work .title {
-		background-attachment: scroll;
-	}
-}
-/*-- //Phone --*/
+/*-- // Navbar : Activate collapse on sm size: --*/
