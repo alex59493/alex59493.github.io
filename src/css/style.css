@@ -493,9 +493,16 @@
 		font-size: 14px;
 	}
 
+	#skills .my-no-padding {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
 	@media screen and (min-width: 1px) and (max-width: 768px) {
 		#skills {
 			margin: 25px 0;
+			padding-left: 50px;
+			padding-right: 50px;
 		}
 
 		#skills h1 {
@@ -510,7 +517,17 @@
 			margin-bottom: 50px;
 		}
 
-		#skills .row > div {
+		#skills .my-table {
+			width: 100%;
+		}
+
+		#skills .my-margin-bottom-xs {
+			margin-bottom: 30px;
+		}
+	}
+
+	@media screen and (min-width: 1px) and (max-width: 576px) {
+		#skills .my-margin-bottom-xs {
 			margin-bottom: 50px;
 		}
 	}
@@ -562,7 +579,8 @@
 		position: relative;
 		width: 100%;
 		margin: 50px 0;
-		padding: 75px 100px;
+		padding: 100px 100px;
+		text-align: center;
 	}
 
 	#recommendations .title .parallax-recommendations {
@@ -584,8 +602,9 @@
 	}
 
 	#recommendations .title .content {
+		max-width: 600px;
 		position: relative;
-		text-align: center;
+		display: inline-block;
 		font-size: 22px;
 		color: #fff;
 		font-style: italic;
@@ -626,7 +645,8 @@
 /*-- Work Section --*/
 
 	#work {
-		padding: 50px 0;
+		padding: 50px;
+		padding-bottom: 0;
 	}
 
 	#work h1 {
@@ -636,11 +656,7 @@
 		margin-bottom: 70px;
 	}
 
-	#work .container {
-		width: 90%;
-	}
-
-	#work .container .row-space {
+	#work .container-fluid .work-item {
 		margin-bottom: 40px;
 	}
 
@@ -661,6 +677,9 @@
 	}
 
 	#work .work-item .hovereffect img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 		transition: all .4s linear;
 		-webkit-transition: all .4s linear;
 	}
@@ -778,13 +797,16 @@
 	}
 
 	@media screen and (min-width: 1px) and (max-width: 768px) {
+		#work {
+			padding-top: 20px;
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 50px;
+		}
+
 		#work h1 {
 			font-size: 24px;
 			letter-spacing: 3px;
-		}
-
-		#work .container {
-			padding: 0;
 		}
 
 		#work .row > div {
@@ -795,8 +817,13 @@
 			height: 100%;
 		}
 
-		#work .container .row-space {
+		#work .container-fluid .row-space {
 			margin: 0;
+		}
+
+		#work .modalWork .modal-body {
+			padding: 0;
+			padding-bottom: 50px;
 		}
 
 		#work .modalWork .modal-body img {

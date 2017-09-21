@@ -170,7 +170,7 @@ $(function() {
 
         var userLang = navigator.language || navigator.userLanguage;  // Get user language
 
-        if (userLang === "fr") {
+        if (userLang.toLowerCase() === "fr" || userLang.toLowerCase() === "fr-fr") {
             I18nextToFrench();
         }
         else {
