@@ -171,11 +171,50 @@ $(function() {
         var userLang = navigator.language || navigator.userLanguage;  // Get user language
 
         if (userLang === "fr") {
-            $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/France.png');
-            initI18next("fr");
+            I18nextToFrench();
         }
         else {
+            I18nextToEnglish();
+        }
+
+        /* ------- // INITIALISATION ------- */
+
+
+        /* ------- SWITCH LANGuAGE ------- */
+
+        $(".switchToEnglish").click(function() {
+            I18nextToEnglish();
+        });
+
+        $(".switchToFrench").click(function() {
+            I18nextToFrench();
+        });
+
+        /* ------- // SWITCH LANGuAGE ------- */
+
+
+        function I18nextToFrench() {
+            // Update language of all the specified locations
+            initI18next("fr");
+            // Update displayed flag
+            $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/France.png'); // Update displayed flag
+            // If the screen is not a mobile, update the Typed.js text
+            var mq = window.matchMedia("(min-width: 1px) and (max-width: 576px)");
+            if (!mq.matches) {
+                initTypedText([
+                    "Je suis un développeur Web.",
+                    "Je développe vos sites Web.",
+                    "Je suis un Web designer."
+                ]);
+            }
+        }
+
+        function I18nextToEnglish() {
+            // Update language of all the specified locations
+            initI18next("en");
+            // Update displayed flag
             $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/United-Kingdom.png');
+            // If the screen is not a mobile, update the Typed.js text
             var mq = window.matchMedia("(min-width: 1px) and (max-width: 576px)");
             if (!mq.matches) {
                 initTypedText([
@@ -184,7 +223,6 @@ $(function() {
                     "I am a Web designer."
                 ]);
             }
-            initI18next("en");
         }
 
         function initI18next(langCode) {
@@ -202,62 +240,6 @@ $(function() {
                     $('.translate').localize();
                 });
         }
-
-        /* ------- // INITIALISATION ------- */
-
-        /* ------- SWITCH LANGuAGE ------- */
-
-        $(".switchToEnglish").click(function() {
-            i18next.changeLanguage("en", function() {
-                $('.translate').localize();
-                $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/United-Kingdom.png');
-                var mq = window.matchMedia("(min-width: 1px) and (max-width: 576px)");
-                if (!mq.matches) {
-                    initTypedText([
-                        "I am a Web developer.",
-                        "I develop your websites.",
-                        "I am a Web designer."
-                    ]);
-                }
-            });
-        });
-
-        $(".switchToFrench").click(function() {
-            i18next.changeLanguage("fr", function() {
-                $('.translate').localize();
-                $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/France.png'); // Update displayed flag
-                var mq = window.matchMedia("(min-width: 1px) and (max-width: 576px)");
-                if (!mq.matches) {
-                    initTypedText([
-                        "Je suis un développeur Web.",
-                        "Je développe vos sites Web.",
-                        "Je suis un Web designer."
-                    ]);
-                }
-            });
-        });
-
-        /* ------- // SWITCH LANGuAGE ------- */
-
-
-        // $('.navbar .translate-flag').click(function() {
-        //     if ($('.navbar-right li .translate-flag img').attr('alt') === 'English') {
-        //         i18next.changeLanguage("en", function() {
-        //             $('.translate').localize();
-        //             $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/France.png');
-        //             $('.navbar-right li .translate-flag img, header .translate-flag img').attr('alt', 'Français');
-        //             initTyped(["I am a Web developer.", "I develop your websites.", "I am a Web designer."])
-        //         });
-        //     }
-        //     else if ($('.navbar-right li .translate-flag img').attr('alt') === 'Français') {
-        //         i18next.changeLanguage("fr", function() {
-        //             $('.translate').localize();
-        //             $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/United-Kingdom.png');
-        //             $('.navbar-right li .translate-flag img, header .translate-flag img').attr('alt', 'English');
-        //             initTyped(["Je suis un développeur Web.", "Je développe vos sites Web.", "Je suis un Web designer."])
-        //         });
-        //     }
-        // })
 
     /* //Translate */
 });

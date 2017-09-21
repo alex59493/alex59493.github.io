@@ -1,88 +1,113 @@
 {
+    "title": "Alexandre PECCAUD - Full stack Web developper",
     "navigation": {
-        "item1": "ABOUT ME",
-        "item2": "SKILLS",
+        "item1": "THE OFFERS",
+        "item2": "ABOUT",
         "item3": "WORK",
         "item4": "CONTACT"
     },
     "header": {
         "h1": "Hi! This is Alexandre",
         "h2": "I develop your websites.",
-        "button": "CONTACT ME"
+        "button": "GET A FREE ESTIMATION"
     },
-    "presentation" : {
-        "h2" : "About me.",
-        "p": "Hi, I'm Alexandre. <br><br> With a passion for <strong>Web development</strong> for more than four years, I wish to put my skills and knowledge at the service of your projects. I’m specialized in the development of <strong>websites</strong> and <strong>Web applications</strong>. <br><br>Having a solid background in back-end, front-end and marketing, I offer <strong>complete and fully customized solutions</strong> according to your requirements. I help you choose the most suited <strong>digital support</strong> for your company (showcase website, e-commerce, blog, ...) and put in place good practices to improve your <strong>visibility on the net</strong> and your <strong>digital identity</strong>."
-    },
-    "skills": {
-        "h2": "My skills.",
-        "backend": {
-            "description": "I use different Back-end (server side) technologies in order to maximise the performance and security of your website.",
-            "item1": {
-                "label": "Security",
-                "description": "I use strong programming languages and set up good security practices on your website."
-            },
-            "item2": {
-                "label": "Reliability",
-                "description": "I ensure that the different functionalities of your website are reliable in the long run by testing them in different use cases."
-            },
-            "item3": {
-                "label": "Data organization",
-                "description": "I use relational database management systems (MySQL, PostreSQL) in order to store and structure the data of your website."
-            },
-            "item4": {
-                "label": "Speed",
-                "description": "I try to shorten the loading times to a minimum and speed up the execution of the various tasks of your website."
-            }
-        },
-        "frontend": {
-            "description": "I use the latest Front-end (client side) technologies in order to enhance the user experience and refine the interface of your website.",
-            "item1": {
-                "label": "Responsive design",
-                "description": "I ensure that your website is adapted to the modern numerical supports (Computers, tablets, mobile phones, …)."
-            },
-            "item2": {
-                "label": "User experience",
-                "description": "I pay particular attention to user experience by maximizing ergonomics, ease of use and visual appearance of your website."
-            }
-        },
-        "marketing": {
-            "description": "I attach great importance to the marketing aspect of your website in order to improve your image and your visibility on the net.",
-            "item1": {
-                "label": "Search Engine Optimization",
-                "description": "I put in place good SEO (Search Engine Optimization) practices in order to improve the position of your website in the results of different search engines."
-            },
-            "item2": {
-                "label": "Web analytics",
-                "description": "By setting up Google Analytics on your website, I give you access to a tool that provides you with complete reports about the traffic on your website."
-            }
-        }
-    },
-    "work": {
-        "h2": "My work.",
+    "offer": {
+        "h1": "What I can do.",
+        "h2": "I offer fully customized solutions to meet your business objectives.",
         "item1": {
-            "label": "AERO",
-            "shortDescription": "Marketing campaign management tool",
-            "longDescription": "AERO is a marketing campaign management software used by SEPHORA DIGITAL SEA (South-East Asia). <br><br> AERO was first designed to streamline the process of creating marketing campaigns by <ul><li>Standardizing the vocabulary used</li> <li> Helping the different stakeholders to share information </li><li> Archiving all the created campaigns </li></ul><br> In addition, by collecting different \"meta-data\" around these campaigns, AERO provides important feedbacks of their effectiveness (ROI, most efficient channels, etc.). In the long term, it can become a real tool to assist in the creation of marketing campaigns."
+            "label": "Websites",
+            "description": "Create a digital identity for your brand and communicate with your clients through successful campaigns."
         },
         "item2": {
-            "label": "SEPHORA",
-            "shortDescription": "christmas gifts recommendation bot",
-            "longDescription": "Autonomous program communicating with a user in order to help him choose a good Christmas gift <br><br> The bot asks a series of questions to the user in order to better know the receiver of the gift and to offer personalized recommendations based on the best-sellers of SEPHORA products <br><br> The user communicates naturally with the bot, as if it communicated with a human being. The bot uses different \"Natural Language Processing\" algorithms in order to interpret the user's messages and extract useful information."
+            "label": "Mobile",
+            "description": "Harness the incredible potential of small screens. Create unique digital experiences on modern platforms."
         },
         "item3": {
-            "label": "CCOOKIE",
-            "shortDescription": "human voice analysis interface",
-            "longDescription": "Interface able to analyze different characteristics of the human voice (intonation, speech rate, listening rate, etc.) <br><br> The application is used as a digital support during training sessions and improves the commercial skills of the participants."
+            "label": "eCommerce",
+            "description": "Sell online and build customer loyalty by offering highly customized experiences."
         },
         "item4": {
-            "label": "SEPHORA DATA",
-            "shortDescription": "blog about the latest work of sephora data team",
-            "longDescription": "Blog used internally by the company SEPHORA DIGITAL SEA (South-East Asia) containing the latest work of the DATA team. <br><br> The blog is a way to effectively share information between different teams within the company and to archive this information."
+            "label": "Data",
+            "description": "Collect, organize and exploit the incredible amount of information you have access to."
+        }
+    },
+    "skills": {
+        "h1": "What I guarantee you.",
+        "h2": "Each project will be addressed with a particular attention to:",
+        "item1": {
+            "label": "Security",
+            "description": "Your data as well as those of your users will be totally protected."
+        },
+        "item2": {
+            "label": "Reliability",
+            "description": "The functionalities developed will be tested in different usecases in order to guarantee their reliability in the long term."
+        },
+        "item3": {
+            "label": "Speed",
+            "description": "Load times will be shortened as much as possible."
+        },
+        "item4": {
+            "label": "Responsive design",
+            "description": "All the products will be adapted to the modern digital supports (computers, tablets, mobiles, ...)."
+        },
+        "item5": {
+            "label": "User experience",
+            "description": "The ergonomics, ease of use and visual appearance of your product will be maximized."
+        }
+    },
+    "presentation" : {
+        "h1" : "About me.",
+        "p": "With a passion for <strong>Web development</strong> for more than four years, I wish to put my skills and knowledge at the service of your projects. I’m specialized in the development of <strong>websites</strong> and <strong>Web applications</strong>. <br><br>Having a solid background in back-end, front-end and marketing, I offer <strong>complete and fully customized solutions</strong> according to your requirements. I help you choose the most suited <strong>digital support</strong> for your company (showcase website, e-commerce, blog, ...) and put in place good practices to improve your <strong>visibility on the net</strong> and your <strong>digital identity</strong>."
+    },
+    "recommendations": {
+        "content": "\"Alexandre is a hard worker. He is proactive and understands client's needs. He could advise wisely on the technology of an hybrid app, considering budget and needs.\"",
+        "author": "Victoire Dumont, CEO of Scoutter"
+    },
+    "work": {
+        "h1": "My latest work.",
+        "item1": {
+            "label": "aero",
+            "seeProject": "See the project",
+            "shortDesc": "Marketing campaign management tool",
+            "client": "Sephora",
+            "longDesc": "Web application fully adapted to the needs of the marketing team of Sephora SEA. This application makes it possible, among other things, to create campaigns, plan various communication media, communicate and share information within the team.",
+            "modal": "AERO is a software package fully adapted to the needs of the marketing team of Sephora SEA. <br><br> Created using Web technologies, AERO does not need to be installed on the users' computer and centralizes all the information in a single database. <br><br> AERO allows, among others, to <ul> <li> Create new campaigns in a collaborative way </li> <li> Communicate within specific channels, for example between all designers </li> <li> Follow certain campaigns and receive notification about any changes </li> <li> Get complete reports on campaign performance and return on investment </li> </ul>"
+        },
+        "item2": {
+            "label": "scoutter",
+            "seeProject": "See the project",
+            "shortDesc": "Management application for antique dealers",
+            "client": "Scoutter",
+            "longDesc": "Hybrid mobile application offering antique dealers a complete solution for managing their activities and products. From the automatic creation of invoices to the publication of specific searches, Scoutter Pro allows its users to concentrate on the important part of their activities without losing time with the formalities.",
+            "modal": "Hybrid mobile application offering antique dealers a complete solution for managing their activities and products. <br><br> From the automatic creation of invoices to the publication of specific searches, Scoutter Pro allows its users to concentrate on the important part of their activities without losing time with the formalities."
+        },
+        "item3": {
+            "label": "ccookie",
+            "seeProject": "See the project",
+            "shortDesc": "Human voice analysis interface",
+            "client": "CCOOKIE",
+            "longDesc": "Web interface able to analyze some characteristics of the human voice. The application serves as a training tool and improves the business skills of the users.",
+            "modal": "Web interface able to analyze some characteristics of the human voice. The application serves as a training tool and improves the commercial skills of the users. <br><br> The application can, for example, measure the speech rate and the intonation of a user and compare it to a reference indicator <br><br> This rational approach makes it possible to the user to be autonomous in his training."
+        },
+        "item4": {
+            "label": "chatbot",
+            "seeProject": "See the project",
+            "shortDesc": "Christmas Gifts Recommendation Bot",
+            "client": "Sephora",
+            "longDesc": "Chatbot able to recommend ultra-customized Christmas gifts among the Sephora product range. An extraordinary shopping experience!",
+            "modal": "Chatbot able to recommend ultra-customized Christmas gifts among the Sephora product range. <br><br> This program first retrieve highly relevant information about the gift recipient and use it to suggest fully customized gift recommendations. <br><br> Much more innovative and original than a \"classic\" formulary, the purchase experience is much more pleasant and therefore favors the conversion rate."
+        },
+        "item5": {
+            "label": "blog",
+            "seeProject": "See the project",
+            "shortDesc": "Blog describing the latest work of the Data Team",
+            "client": "Sephora",
+            "longDesc": "Blog used within Sephora SEA's DATA team not only to keep track of all the work done by the team but also to easily share information with other teams or newcomers.",
+            "modal": "Blog used within Sephora SEA's DATA team not only to keep track of all the work done by the team but also to easily share information with other teams or newcomers."
         }
     },
     "contact": {
-        "h2": "Contact me.",
+        "h1": "Tell me more.",
         "form": {
             "name": "Name",
             "email": "Email",
