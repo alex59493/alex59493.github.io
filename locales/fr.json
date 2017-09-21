@@ -1,94 +1,120 @@
 {
+    "title": "Alexandre PECCAUD - Développeur de sites et applications web",
     "navigation": {
-        "item1": "À PROPOS",
-        "item2": "COMPÉTENCES",
+        "item1": "LES OFFRES",
+        "item2": "À PROPOS",
         "item3": "RÉALISATIONS",
         "item4": "CONTACT"
     },
     "header": {
         "h1": "Bonjour ! Je suis Alexandre",
         "h2": "Je développe vos sites.",
-        "button": "CONTACTEZ MOI"
+        "button": "OBTENIR UN DEVIS GRATUIT"
     },
-    "presentation": {
-        "h2": "À propos de moi.",
-        "p": "Bonjour, je suis Alexandre. <br><br> Passionné par le <strong>développement Web</strong> depuis plus de quatre ans, j’ai créé mon auto-entreprise afin de mettre mes compétences et mes connaissances au service de vos projets. Je suis spécialisé dans le <strong>développement de sites internet</strong> et d’<strong>applications Web</strong>. <br><br> Ayant de solides compétences en programmation back-end, front-end et marketing, je vous propose des <strong>solutions complètes et entièrement personnalisées</strong> selon vos demandes. Je vous aide à choisir le <strong>support digital</strong> le plus adapté à votre entreprise (site vitrine, e-commerce, blog, ...) et mets en place les bonnes pratiques pour améliorer votre <strong>visibilité sur le net</strong> et votre <strong>identité digitale</strong>."
-    },
-    "skills": {
-        "h2": "Mes compétences.",
-        "backend": {
-            "description": "J’utilise différentes technologies Back-end (côté serveur) pour maximiser les performances et la sécurité de vos sites Internet.",
-            "item1": {
-                "label": "Sécurité",
-                "description": "J'utilise des langages de programmation robustes et mets en place les bonnes pratiques de sécurité sur votre site."
-            },
-            "item2": {
-                "label": "Fiabilité",
-                "description": "Je m'assure de tester les fonctionnalités de votre site internet dans différents cas d'utilisation afin de garantir leur fiabilité sur le long terme."
-            },
-            "item3": {
-                "label": "Organisation des données",
-                "description": "J'utilise des technologies de base de données relationelles (MySQL, PostreSQL) pour enregistrer et structurer les données de votre site."
-            },
-            "item4": {
-                "label": "Rapidité",
-                "description": "Je m'efforce d'écourter les temps de chargement au minimum et accélérer l'execution des différentes tâches de votre site."
-            }
-        },
-        "frontend": {
-            "description": "J’utilise les dernières technologies Front-end (côté client) pour améliorer l'expérience utilisateur et épurer l'interface de vos sites Internet.",
-            "item1": {
-                "label": "Responsive design",
-                "description": "Je m’assure que votre site soit adapté aux différents supports numériques modernes (Ordinateurs, tablettes, mobiles, …)."
-            },
-            "item2": {
-                "label": "Expérience utilisateur",
-                "description": "J’accorde une attention particulière à l’expérience utilisateur en maximisant l’ergonomie, la facilité d’utilisation et l’aspect visuel de votre site."
-            }
-        },
-        "marketing": {
-            "description": "J'accorde beaucoup d'importance à l'aspect Marketing de votre site pour améliorer votre image et votre visibilité sur le net.",
-            "item1": {
-                "label": "Référencement",
-                "description": "Je mets en place les bonnes pratiques SEO (Search Engine Optimization) pour améliorer la position de votre site dans les résultats des différents moteurs de recherche."
-            },
-            "item2": {
-                "label": "Web analyse",
-                "description": "En installant Google Analytics sur votre site, je vous mets à dispostion un outil vous fournissant des rapports complets sur le traffic de votre site."
-            }
-        }
-    },
-    "work": {
-        "h2": "Mes réalisations.",
+    "offer": {
+        "h1": "Ce que je vous propose.",
+        "h2": "Je vous propose des solutions entièrement personnalisées afin d'atteindre vos objectifs commerciaux.",
         "item1": {
-            "label": "AERO",
-            "shortDescription": "outil de management de campagnes marketing",
-            "longDescription": "AERO est un progiciel de gestion de campagnes marketing utilisé au sein de l'entreprise SEPHORA DIGITAL SEA (South-East Asia).<br><br> AERO a d'abord été conçu afin de rationaliser le processus de création de campagnes marketing en : <ul><li>Standardisant le vocabulaire utilisé</li><li>Facilitant l'échange d'information entre les différentes parties prenantes</li><li>Archivant toutes les campagnes créées</li></ul><br>De plus, en collectant différentes \"meta-data\" autour de ces campagnes, AERO fournit d'importantes données sur l'efficacité de ces campagnes (Retour sur investissement, channels les plus efficaces, etc). Il pourra, sur le long terme, devenir un réel outil d'assistance à la création de campagnes marketing."
+            "label": "Sites Internet",
+            "description": "Créez une identité digitale pour votre marque et menez à bien vos campagnes."
         },
         "item2": {
-            "label": "SEPHORA",
-            "shortDescription": "bot de recommandation de cadeaux de noel",
-            "longDescription": "Programme autonome communiquant avec un utilisateur afin de l'aider à choisir un bon cadeau de Noel.<br><br> Le bot pose une série de questions à l'utilisateur afin de mieux connaitre le destinataire du cadeau pour lui proposer des recommandations personalisées basées sur les meilleurs ventes des produits SEPHORA.<br><br> L'utilisateur communique naturellement avec le bot, comme s'il communiquait avec un être humain. Le bot, lui, utilise différents algorithmes de \"Natural Language Processing\" afin d'interpréter les messages de l'utilisateur et d'en extraire des informations utiles."
+            "label": "Mobile",
+            "description": "Exploitez le potentiel incroyable des petits écrans. Créer des expériences digitales uniques sur des plateformes modernes."
         },
         "item3": {
-            "label": "CCOOKIE",
-            "shortDescription": "interface d'analyse de la voix humaine",
-            "longDescription": "Interface permettant d’analyser différentes caractéristiques de la voix humaine (intonation, débit de parole, taux d'écoute, etc).<br><br> L’application sert de support de formation et permet d’améliorer les compétences commerciales des participants."
+            "label": "eCommerce",
+            "description": "Vendez en ligne et fidélisez vos clients en proposant des expériences ultra personnalisées."
         },
         "item4": {
-            "label": "SEPHORA DATA",
-            "shortDescription": "blog relatant les derniers travaux de l'equipe data de sephora digital sea",
-            "longDescription": "Blog utilisé en interne par l'entreprise SEPHORA DIGITAL SEA (South-East Asia) relatant les derniers travaux de l'équipe DATA.<br><br> Le blog est un moyen de partager efficacement l'information entre les différentes équipes au sein de l'entreprise et d'archiver ces informations."
+            "label": "Données",
+            "description": "Collectez, organisez et exploitez l'incroyable quantité d'information dont vous avez accès."
+        }
+    },
+    "skills": {
+        "h1": "Ce que je vous garantie.",
+        "h2": "Chaque projet sera traité avec une attention particulière aux points suivants :",
+        "item1": {
+            "label": "Sécurité",
+            "description": "Vos données ainsi que celles de vos utilisateurs seront protégées."
+        },
+        "item2": {
+            "label": "Fiabilité",
+            "description": "Les fonctionnalitées développées seront testées dans différents cas d'utilisation afin de garantir leur fiabilité sur le long terme."
+        },
+        "item3": {
+            "label": "Rapidité",
+            "description": "Les temps de chargement seront écourtés au maximum."
+        },
+        "item4": {
+            "label": "Responsive design",
+            "description": "Les produits seront adaptés aux différents supports numériques modernes (Ordinateurs, tablettes, mobiles, …)."
+        },
+        "item5": {
+            "label": "Expérience utilisateur",
+            "description": "L’ergonomie, la facilité d’utilisation et l’aspect visuel de votre produit seront maximisés."
+        }
+    },
+    "presentation": {
+        "h1": "À propos de moi.",
+        "p": "Passionné par le <strong>développement Web</strong> depuis plus de quatre ans, j’ai créé mon auto-entreprise afin de mettre mes compétences et mes connaissances au service de vos projets. Je suis spécialisé dans le <strong>développement de sites internet</strong> et d’<strong>applications Web</strong>. <br><br> Ayant de solides compétences en programmation back-end, front-end et marketing, je vous propose des <strong>solutions complètes et entièrement personnalisées</strong> selon vos demandes. Je vous aide à choisir le <strong>support digital</strong> le plus adapté à votre entreprise (site vitrine, e-commerce, blog, ...) et mets en place les bonnes pratiques pour améliorer votre <strong>visibilité sur le net</strong> et votre <strong>identité digitale</strong>."
+    },
+    "recommendations": {
+        "content": "\"Alexandre est un travailleur acharné. Il est proactif et comprend les besoins des clients. Il sait conseiller judicieusement sur le choix des technologies d'une application hybride, compte tenu du budget et des besoins.\"",
+        "author": "Victoire Dumont, CEO de Scoutter"
+    },
+    "work": {
+        "h1": "Mes dernières réalisations.",
+        "item1": {
+            "label": "aero",
+            "seeProject": "Voir le projet",
+            "shortDesc": "Outil de management de campagnes marketing",
+            "client": "Sephora",
+            "longDesc": "Application web entièrement adaptée aux besoins de l'équipe marketing de Sephora SEA. Cette application permet, entre autres, de créer des campagnes, planifier différents medias de communication, communiquer et partager des informations au sein de l'équipe.",
+            "modal": "AERO est progiciel entièrement adaptée aux besoins de l'équipe marketing de Sephora SEA. <br><br> Créée à l'aide de technologies Web, AERO ne nécessite pas d'installation sur le poste des utilisateurs et centralise toute les informations concernants les campagnes marketing au même endroit.<br><br> AERO permet, entre autres, de <ul> <li>Créer de nouvelles campagnes de manière collaborative</li> <li>Communiquer aux sein de canaux spécifiques, par exemple entre tous les designers</li> <li>Suivre certaines campagnes et recevoir une notification au changement de celles-ci</li> <li>Obtenir des rapports complets sur la performance des campagnes et le retour sur investissement</li> </ul>"
+        },
+        "item2": {
+            "label": "scoutter",
+            "seeProject": "Voir le projet",
+            "shortDesc": "Application de gestion pour les antiquaires",
+            "client": "Scoutter",
+            "longDesc": "Application mobile hybride proposant aux antiquaires une solution complète de gestion de leurs activités et de leurs produits. De la création automatique de factures jusqu'à la publication de recherches spécifiques, Scoutter Pro permet à ses utilisateurs de se concentrer sur l'essentiel de leurs activités sans perdre de temps avec les formalités.",
+            "modal": "Application mobile hybride proposant aux antiquaires une solution complète de gestion de leurs activités et de leurs produits. <br><br> De la création automatique de factures jusqu'à la publication de recherches spécifiques, Scoutter Pro permet à ses utilisateurs de se concentrer sur l'essentiel de leurs activités sans perdre de temps avec les formalités."
+        },
+        "item3": {
+            "label": "ccookie",
+            "seeProject": "Voir le projet",
+            "shortDesc": "Interface d'analyse de la voix humaine",
+            "client": "CCOOKIE",
+            "longDesc": "Interface Web permettant d'analyser des caractéristiques de la voix humaine. L’application sert de support de formation et permet d’améliorer les compétences commerciales des utilisateurs.",
+            "modal": "Interface Web permettant d'analyser des caractéristiques de la voix humaine. L’application sert de support de formation et permet d’améliorer les compétences commerciales des participants.<br><br> L'application permet, par example, de mesurer le débit de parole et l'intonation d'un utilisateur et le comparer à un indicateur de référence.<br><br> Cette approche rationnelle permet de rendre l'utilisateur autonome dans sa formation."
+        },
+        "item4": {
+            "label": "chatbot",
+            "seeProject": "Voir le projet",
+            "shortDesc": "Bot de recommandation de cadeaux de noel",
+            "client": "Sephora",
+            "longDesc": "Chatbot capable de recommender des cadeaux de Noel ultra-personnalisés parmis la gamme de produits Sephora. Une expérience d'achat hors du commun !",
+            "modal": "Chatbot capable de recommender des cadeaux de Noel ultra-personnalisés parmis la gamme de produits Sephora.<br><br> Ce programme permet de récupérer une multitude d'informations très pertinentes sur le destinateur de cadeau et ainsi de suggérer des produits entièrement personnalisés.<br><br> Bien plus innovant et original qu'un formulaire \"classique\", l'expérience d'achat est bien plus plaisante et favorise donc le taux de conversion."
+        },
+        "item5": {
+            "label": "blog",
+            "seeProject": "Voir le projet",
+            "shortDesc": "Blog relatant les derniers travaux de l'equipe",
+            "client": "Sephora",
+            "longDesc": "Blog utilisé au sein de l'équipe DATA de Sephora SEA permettant non seulement de garder une trace de tous les travaux effectués par l'équipe mais aussi de partager facilement l'information avec les autres équipes ou les nouveaux arrivants.",
+            "modal": "Blog utilisé au sein de l'équipe DATA de Sephora SEA permettant non seulement de garder une trace de tous les travaux effectués par l'équipe mais aussi de partager facilement l'information avec les autres équipes ou les nouveaux arrivants."
         }
     },
     "contact": {
-        "h2": "Contactez moi.",
+        "h1": "Dites m'en plus.",
+        "h2": "Obtenez un devis gratuitement ! Pour celà, laissez moi juste votre adresse email et une courte description de votre projet.",
         "form": {
             "name": "Nom",
             "email": "Email",
             "phone": "Numéro de téléphone (optionnel)",
             "message": "Message",
-            "submit": "Envoyer message"
+            "submit": "Envoyer le message"
         }
     },
     "banner": {
