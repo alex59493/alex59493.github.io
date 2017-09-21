@@ -107,13 +107,14 @@
         }
     },
     "contact": {
-        "h1": "Tell me more.",
+        "h1": "Let's start.",
+        "h2": "Get a quote for free! For that, just let me your email address and a short description of your project.",
         "form": {
             "name": "Name",
             "email": "Email",
             "phone": "Phone number (optional)",
             "message": "Message",
-            "submit": "Send message"
+            "submit": "Send the message"
         }
     },
     "banner": {

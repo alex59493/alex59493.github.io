@@ -108,12 +108,13 @@
     },
     "contact": {
         "h1": "Dites m'en plus.",
+        "h2": "Obtenez un devis gratuitement ! Pour celà, laissez moi juste votre adresse email et une courte description de votre projet.",
         "form": {
             "name": "Nom",
             "email": "Email",
             "phone": "Numéro de téléphone (optionnel)",
             "message": "Message",
-            "submit": "Envoyer message"
+            "submit": "Envoyer le message"
         }
     },
     "banner": {
