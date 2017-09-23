@@ -664,13 +664,16 @@
 		margin-bottom: 70px;
 	}
 
-	#work .container-fluid .work-item {
-		margin-bottom: 40px;
+	#work .my-table {
+		text-align: center;
+	}
+
+	#work .my-table > div:nth-child(4) {
+		clear: left;
 	}
 
 	#work .work-item {
-		margin: 10px;
-		text-align: center;
+		margin-bottom: 40px;
 	}
 
 	#work .work-item .hovereffect {
@@ -838,6 +841,16 @@
 		#work .modalWork .modal-body img {
 			width: 100%;
 			margin-bottom: 20px;
+		}
+	}
+
+	@media screen and (max-width: 992px) {
+		/* Solution for having a complex Bootrap layout */
+		#work .my-table > div:nth-child(4) {
+			clear: initial;
+		}
+		#work .my-table > div:nth-child(3), #work .my-table > div:nth-child(5) {
+			clear: left;
 		}
 	}
 
