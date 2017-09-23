@@ -209,11 +209,11 @@
 	/* Flag */
 	.navbar .navbar-right li:last-child a {
 		cursor: pointer;
-		padding: 10px;
+		padding-top: 12px;
 	}
 	.navbar .navbar-right img {
-		width: 40px;
-		height: 40px;
+		width: 35px;
+		height: 35px;
 	}
 	.navbar .dropdown-menu {
 		background-color: black;
@@ -432,12 +432,14 @@
 		#offer h1 {
 			font-size: 24px;
 			letter-spacing: 3px;
+			margin-bottom: 40px;
+			line-height: 30px;
 		}
 		
 		#offer h2 {
 			font-size: 16px;
 			letter-spacing: 1px;
-			line-height: 22px;
+			line-height: 25px;
 			margin-bottom: 50px;
 		}
 
@@ -463,12 +465,14 @@
 	#skills h1 {
 		font-size: 50px;
 		margin: 10px 0;
+		margin-bottom: 40px;
 		letter-spacing: 2px;
 	}
 
 	#skills h2 {
 		font-size: 18px;
 		margin: 30px 0;
+		line-height: 25px;
 		margin-bottom: 80px;
 	}
 
@@ -508,13 +512,14 @@
 		#skills h1 {
 			font-size: 24px;
 			letter-spacing: 3px;
+			line-height: 30px;
 		}
 		
 		#skills h2 {
 			font-size: 16px;
 			letter-spacing: 1px;
 			line-height: 22px;
-			margin-bottom: 50px;
+			margin-bottom: 60px;
 		}
 
 		#skills .my-table {
@@ -810,6 +815,7 @@
 		#work h1 {
 			font-size: 24px;
 			letter-spacing: 3px;
+			line-height: 30px;
 		}
 
 		#work .row > div {

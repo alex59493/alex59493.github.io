@@ -33,7 +33,7 @@
     },
     "skills": {
         "h1": "Ce que je vous garantie.",
-        "h2": "Chaque projet sera traité avec une attention particulière aux points suivants :",
+        "h2": "Pour chaque projet, une attention particulière est accordée aux points suivants :",
         "item1": {
             "label": "Sécurité",
             "description": "Vos données ainsi que celles de vos utilisateurs seront protégées."
@@ -71,7 +71,7 @@
             "shortDesc": "Outil de management de campagnes marketing",
             "client": "Sephora",
             "longDesc": "Application web entièrement adaptée aux besoins de l'équipe marketing de Sephora SEA. Cette application permet, entre autres, de créer des campagnes, planifier différents medias de communication, communiquer et partager des informations au sein de l'équipe.",
-            "modal": "AERO est progiciel entièrement adaptée aux besoins de l'équipe marketing de Sephora SEA. <br><br> Créée à l'aide de technologies Web, AERO ne nécessite pas d'installation sur le poste des utilisateurs et centralise toute les informations concernants les campagnes marketing au même endroit.<br><br> AERO permet, entre autres, de <ul> <li>Créer de nouvelles campagnes de manière collaborative</li> <li>Communiquer aux sein de canaux spécifiques, par exemple entre tous les designers</li> <li>Suivre certaines campagnes et recevoir une notification au changement de celles-ci</li> <li>Obtenir des rapports complets sur la performance des campagnes et le retour sur investissement</li> </ul>"
+            "modal": "AERO est progiciel entièrement adaptée aux besoins de l'équipe marketing de Sephora SEA. <br><br> Créée à l'aide de technologies Web, AERO ne nécessite pas d'installation sur le poste des utilisateurs et centralise toute les informations concernants les campagnes marketing au même endroit.<br><br> AERO permet, entre autres, de : <ul> <li>Créer de nouvelles campagnes de manière collaborative</li> <li>Communiquer aux sein de canaux spécifiques, par exemple entre tous les designers</li> <li>Suivre certaines campagnes et recevoir une notification au changement de celles-ci</li> <li>Obtenir des rapports complets sur la performance des campagnes et le retour sur investissement</li> </ul>"
         },
         "item2": {
             "label": "scoutter",
@@ -79,7 +79,7 @@
             "shortDesc": "Application de gestion pour les antiquaires",
             "client": "Scoutter",
             "longDesc": "Application mobile hybride proposant aux antiquaires une solution complète de gestion de leurs activités et de leurs produits. De la création automatique de factures jusqu'à la publication de recherches spécifiques, Scoutter Pro permet à ses utilisateurs de se concentrer sur l'essentiel de leurs activités sans perdre de temps avec les formalités.",
-            "modal": "Application mobile hybride proposant aux antiquaires une solution complète de gestion de leurs activités et de leurs produits. <br><br> De la création automatique de factures jusqu'à la publication de recherches spécifiques, Scoutter Pro permet à ses utilisateurs de se concentrer sur l'essentiel de leurs activités sans perdre de temps avec les formalités."
+            "modal": "Application mobile hybride proposant aux antiquaires une solution complète de gestion de leurs activités et de leurs produits. <br><br> De la création automatique de factures jusqu'à la publication de recherches spécifiques, Scoutter Pro permet à ses utilisateurs de se concentrer sur l'essentiel de leurs activités sans perdre de temps avec les formalités.<br><br><a href=\"https://www.scoutter.com\">https://www.scoutter.com</a>"
         },
         "item3": {
             "label": "ccookie",

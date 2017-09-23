@@ -71,7 +71,7 @@
             "shortDesc": "Marketing campaign management tool",
             "client": "Sephora",
             "longDesc": "Web application fully adapted to the needs of the marketing team of Sephora SEA. This application makes it possible, among other things, to create campaigns, plan various communication media, communicate and share information within the team.",
-            "modal": "AERO is a software package fully adapted to the needs of the marketing team of Sephora SEA. <br><br> Created using Web technologies, AERO does not need to be installed on the users' computer and centralizes all the information in a single database. <br><br> AERO allows, among others, to <ul> <li> Create new campaigns in a collaborative way </li> <li> Communicate within specific channels, for example between all designers </li> <li> Follow certain campaigns and receive notification about any changes </li> <li> Get complete reports on campaign performance and return on investment </li> </ul>"
+            "modal": "AERO is a software package fully adapted to the needs of the marketing team of Sephora SEA. <br><br> Created using Web technologies, AERO does not need to be installed on the users' computer and centralizes all the information in a single database. <br><br> AERO allows, among others, to : <ul> <li> Create new campaigns in a collaborative way </li> <li> Communicate within specific channels, for example between all designers </li> <li> Follow certain campaigns and receive notification about any changes </li> <li> Get complete reports on campaign performance and return on investment </li> </ul>"
         },
         "item2": {
             "label": "scoutter",
@@ -79,7 +79,7 @@
             "shortDesc": "Management application for antique dealers",
             "client": "Scoutter",
             "longDesc": "Hybrid mobile application offering antique dealers a complete solution for managing their activities and products. From the automatic creation of invoices to the publication of specific searches, Scoutter Pro allows its users to concentrate on the important part of their activities without losing time with the formalities.",
-            "modal": "Hybrid mobile application offering antique dealers a complete solution for managing their activities and products. <br><br> From the automatic creation of invoices to the publication of specific searches, Scoutter Pro allows its users to concentrate on the important part of their activities without losing time with the formalities."
+            "modal": "Hybrid mobile application offering antique dealers a complete solution for managing their activities and products. <br><br> From the automatic creation of invoices to the publication of specific searches, Scoutter Pro allows its users to concentrate on the important part of their activities without losing time with the formalities..<br><br><a href=\"https://www.scoutter.com\">https://www.scoutter.com</a>"
         },
         "item3": {
             "label": "ccookie",
