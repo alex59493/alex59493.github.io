@@ -22,19 +22,24 @@ $(function() {
 
 
     // Initialize parallax effect for images scrolling
-    (function() {
-        var parallax = document.querySelectorAll(".parallax");
-        var speed = 0.5;
-    
-        window.onscroll = function() {
-            [].slice.call(parallax).forEach(function(el,i) {
-                var windowYOffset = window.pageYOffset;
-                var elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+    // TODO: Find a more elegant solution with better performance. The onscroll event is very ressource consuming
+
+    var mq = window.matchMedia("(min-width: 1px) and (max-width: 576px)");
+    if (!mq.matches) {
+        (function() {
+            var parallax = document.querySelectorAll(".parallax");
+            var speed = 0.5;
         
-                el.style.backgroundPosition = elBackgrounPos;
-            });
-        };
-    }) ();
+            window.onscroll = function() {
+                [].slice.call(parallax).forEach(function(el,i) {
+                    var windowYOffset = window.pageYOffset;
+                    var elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+            
+                    el.style.backgroundPosition = elBackgrounPos;
+                });
+            };
+        }) ();
+    }
 
 
     /* Waypoints (trigger event on scroll) */
