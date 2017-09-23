@@ -79,7 +79,7 @@
             "shortDesc": "Application de gestion pour les antiquaires",
             "client": "Scoutter",
             "longDesc": "Application mobile hybride proposant aux antiquaires une solution complète de gestion de leurs activités et de leurs produits. De la création automatique de factures jusqu'à la publication de recherches spécifiques, Scoutter Pro permet à ses utilisateurs de se concentrer sur l'essentiel de leurs activités sans perdre de temps avec les formalités.",
-            "modal": "Application mobile hybride proposant aux antiquaires une solution complète de gestion de leurs activités et de leurs produits. <br><br> De la création automatique de factures jusqu'à la publication de recherches spécifiques, Scoutter Pro permet à ses utilisateurs de se concentrer sur l'essentiel de leurs activités sans perdre de temps avec les formalités.<br><br><a href=\"https://www.scoutter.com\">https://www.scoutter.com</a>"
+            "modal": "Application mobile hybride proposant aux antiquaires une solution complète de gestion de leurs activités et de leurs produits. <br><br> De la création automatique de factures jusqu'à la publication de recherches spécifiques, Scoutter Pro permet à ses utilisateurs de se concentrer sur l'essentiel de leurs activités sans perdre de temps avec les formalités.<br><br><a href=\"https://www.scoutter.com\" target=\"_blank\">https://www.scoutter.com</a>"
         },
         "item3": {
             "label": "ccookie",
