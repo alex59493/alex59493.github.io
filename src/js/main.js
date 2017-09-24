@@ -123,6 +123,8 @@ $(function() {
 
 
     /* Waypoints (trigger event on scroll) */
+    var mq = window.matchMedia("(min-width: 1px) and (max-width: 576px)");
+    if (!mq.matches) {
         // Offer
         $('#offer .myFadeIn').css('opacity', 0);
 
@@ -146,6 +148,7 @@ $(function() {
             $('#work .myFadeIn').addClass('animated fadeIn');
         }, { offset: '80%'});
         // //Work
+    }
     /* //Waypoints */
 
 
