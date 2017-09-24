@@ -42,57 +42,110 @@ $(function() {
     }
 
 
+    /* Translate (i18next) */
+
+        /* ------- INITIALISATION ------- */
+
+        var userLang = navigator.language || navigator.userLanguage;  // Get user language
+    
+        if (userLang.toLowerCase() === "fr" || userLang.toLowerCase() === "fr-fr") {
+            I18nextToFrench();
+        }
+        else {
+            I18nextToEnglish();
+        }
+
+        /* ------- // INITIALISATION ------- */
+
+
+        /* ------- SWITCH LANGuAGE ------- */
+
+        $(".switchToEnglish").click(function() {
+            I18nextToEnglish();
+        });
+
+        $(".switchToFrench").click(function() {
+            I18nextToFrench();
+        });
+
+        /* ------- // SWITCH LANGuAGE ------- */
+    
+    
+        function I18nextToFrench() {
+            // Update language of all the specified locations
+            initI18next("fr");
+            // Update displayed flag
+            $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/France.png'); // Update displayed flag
+            // If the screen is not a mobile, update the Typed.js text
+            var mq = window.matchMedia("(min-width: 1px) and (max-width: 576px)");
+            if (!mq.matches) {
+                initTypedText([
+                    "Je suis un développeur Web.",
+                    "Je développe vos sites Web.",
+                    "Je suis un Web designer."
+                ]);
+            }
+        }
+
+        function I18nextToEnglish() {
+            // Update language of all the specified locations
+            initI18next("en");
+            // Update displayed flag
+            $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/United-Kingdom.png');
+            // If the screen is not a mobile, update the Typed.js text
+            var mq = window.matchMedia("(min-width: 1px) and (max-width: 576px)");
+            if (!mq.matches) {
+                initTypedText([
+                    "I am a Web developer.",
+                    "I develop your websites.",
+                    "I am a Web designer."
+                ]);
+            }
+        }
+
+        function initI18next(langCode) {
+            var filePath = "/locales/" + langCode + ".json"
+            i18next
+                .use(i18nextXHRBackend)
+                .init({
+                    lng: langCode,
+                    fallbackLng: 'en',
+                    backend: {
+                        loadPath: filePath
+                    }
+                }, function(err, t) {
+                    jqueryI18next.init(i18next, $);
+                    $('.translate').localize();
+                });
+        }
+    
+    /* //Translate */
+
+
     /* Waypoints (trigger event on scroll) */
-        // // Skills Items
-        // $('#skills .item1').css('opacity', 0);
-        // $('#skills .item2').css('opacity', 0);
-        // $('#skills .item3').css('opacity', 0);
-        // $('#skills .item4').css('opacity', 0);
-        // $('#skills .item5').css('opacity', 0);
-        // $('#skills .item6').css('opacity', 0);
-        // $('#skills .item7').css('opacity', 0);
-        // $('#skills .item8').css('opacity', 0);
+        // Offer
+        $('#offer .myFadeIn').css('opacity', 0);
 
-        // $("#skills .item1").waypoint(function() {
-        //     $('#skills .item1').addClass('animated fadeInLeft');
-        // }, { offset: '100%'});
+        $("#offer .myFadeIn").waypoint(function() {
+            $('#offer .myFadeIn').addClass('animated fadeInUp');
+        }, { offset: '70%'});
+        // //Offer
 
-        // $("#skills .item2").waypoint(function() {
-        //     $('#skills .item2').addClass('animated fadeInRight');
-        // }, { offset: '100%'});
+        // Skills
+        $('#skills .myFadeIn').css('opacity', 0);
+        
+        $("#skills .myFadeIn").waypoint(function() {
+            $('#skills .myFadeIn').addClass('animated fadeInDown');
+        }, { offset: '70%'});
+        // //Skills
 
-        // $("#skills .item3").waypoint(function() {
-        //     $('#skills .item3').addClass('animated fadeInLeft');
-        // }, { offset: '100%'});
-
-        // $("#skills .item4").waypoint(function() {
-        //     $('#skills .item4').addClass('animated fadeInRight');
-        // }, { offset: '100%'});
-
-        // $("#skills .item5").waypoint(function() {
-        //     $('#skills .item5').addClass('animated fadeInLeft');
-        // }, { offset: '100%'});
-
-        // $("#skills .item6").waypoint(function() {
-        //     $('#skills .item6').addClass('animated fadeInRight');
-        // }, { offset: '100%'});
-
-        // $("#skills .item7").waypoint(function() {
-        //     $('#skills .item7').addClass('animated fadeInLeft');
-        // }, { offset: '100%'});
-
-        // $("#skills .item8").waypoint(function() {
-        //     $('#skills .item8').addClass('animated fadeInRight');
-        // }, { offset: '100%'});
-        // // //Skills Items
-
-        // // Work Items
-        // $('#work .hovereffect').css('opacity', 0);
-
-        // $("#work .hovereffect").waypoint(function() {
-        //     $('#work .hovereffect').addClass('animated fadeIn');
-        // }, { offset: '100%'});
-        // // //Work Items
+        // Work
+        $('#work .myFadeIn').css('opacity', 0);
+        
+        $("#work .myFadeIn").waypoint(function() {
+            $('#work .myFadeIn').addClass('animated fadeIn');
+        }, { offset: '80%'});
+        // //Work
     /* //Waypoints */
 
 
@@ -166,87 +219,6 @@ $(function() {
             offset: 200
         })
     /* //Nav bar */
-
-
-
-    /* Translate (i18next) */
-
-        /* ------- INITIALISATION ------- */
-
-        var userLang = navigator.language || navigator.userLanguage;  // Get user language
-
-        if (userLang.toLowerCase() === "fr" || userLang.toLowerCase() === "fr-fr") {
-            I18nextToFrench();
-        }
-        else {
-            I18nextToEnglish();
-        }
-
-        /* ------- // INITIALISATION ------- */
-
-
-        /* ------- SWITCH LANGuAGE ------- */
-
-        $(".switchToEnglish").click(function() {
-            I18nextToEnglish();
-        });
-
-        $(".switchToFrench").click(function() {
-            I18nextToFrench();
-        });
-
-        /* ------- // SWITCH LANGuAGE ------- */
-
-
-        function I18nextToFrench() {
-            // Update language of all the specified locations
-            initI18next("fr");
-            // Update displayed flag
-            $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/France.png'); // Update displayed flag
-            // If the screen is not a mobile, update the Typed.js text
-            var mq = window.matchMedia("(min-width: 1px) and (max-width: 576px)");
-            if (!mq.matches) {
-                initTypedText([
-                    "Je suis un développeur Web.",
-                    "Je développe vos sites Web.",
-                    "Je suis un Web designer."
-                ]);
-            }
-        }
-
-        function I18nextToEnglish() {
-            // Update language of all the specified locations
-            initI18next("en");
-            // Update displayed flag
-            $('.navbar-right li .translate-flag img, header .translate-flag img').attr('src', 'dist/images/flags/United-Kingdom.png');
-            // If the screen is not a mobile, update the Typed.js text
-            var mq = window.matchMedia("(min-width: 1px) and (max-width: 576px)");
-            if (!mq.matches) {
-                initTypedText([
-                    "I am a Web developer.",
-                    "I develop your websites.",
-                    "I am a Web designer."
-                ]);
-            }
-        }
-
-        function initI18next(langCode) {
-            var filePath = "/locales/" + langCode + ".json"
-            i18next
-                .use(i18nextXHRBackend)
-                .init({
-                    lng: langCode,
-                    fallbackLng: 'en',
-                    backend: {
-                        loadPath: filePath
-                    }
-                }, function(err, t) {
-                    jqueryI18next.init(i18next, $);
-                    $('.translate').localize();
-                });
-        }
-
-    /* //Translate */
 });
 
 function initTypedText(stringsArray) {
